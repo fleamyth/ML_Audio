@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "c:\program files\google\robocal\pre_process.exe.runfiles\_main\src\async_processing\preparer.py", line 202, in do_work
+    await asyncio.gather(
+  File "c:\program files\google\robocal\pre_process.exe.runfiles\_main\src\async_processing\preparer.py", line 308, in _prepare
+    self.d_record.push_to_device(self.log_push_command)
+  File "c:\program files\google\robocal\pre_process.exe.runfiles\_main\src\statistics\device_record.py", line 189, in push_to_device
+    file_path = self.write_to_file()
+                ^^^^^^^^^^^^^^^^^^^^
+  File "c:\program files\google\robocal\pre_process.exe.runfiles\_main\src\statistics\device_record.py", line 168, in write_to_file
+    with open(file_path, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\User\\Desktop\\logs\\S6A67340005M.pkl'
+
+
+[Errno 13] Permission denied: 'C:\\Users\\User\\Desktop\\logs\\S6A67340005M.pkl'

@@ -1,0 +1,51 @@
+2026/08/04 22:55:28 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 22:55:29 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 22:55:30 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/04 22:55:30 NOTICE: gdrive{5SXnH}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 22:55:39 INFO  : WFSC/20260804_222341/device_profile_mt.textproto: Copied (new)
+2026/08/04 22:55:43 INFO  : WFSC/20260804_222341/device_profile_mh.textproto: Copied (new)
+2026/08/04 23:07:09 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:18:18 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:18:27 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:18:29 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/04 23:18:31 NOTICE: gdrive{5SXnH}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:18:32 INFO  : There was nothing to transfer
+2026/08/04 23:18:32 INFO  : 
+Transferred:   	          0 B / 0 B, -, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 9
+Elapsed time:         0.5s
+
+2026/08/04 23:18:32 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:18:33 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:18:34 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/04 23:18:35 NOTICE: gdrive{5SXnH}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:18:42 INFO  : Pre/log_file_20260804_230903.log: Copied (new)
+2026/08/04 23:18:43 INFO  : Pre: Set directory modification time (using DirSetModTime)
+2026/08/04 23:18:43 INFO  : 
+Transferred:   	  126.380 KiB / 126.380 KiB, 100%, 25.275 KiB/s, ETA 0s
+Checks:                 0 / 0, -, Listed 2
+Transferred:            1 / 1, 100%
+Elapsed time:         7.7s
+
+2026/08/05 09:12:34 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 09:12:35 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 09:12:36 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/05 09:12:36 NOTICE: gdrive{5SXnH}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 09:12:37 INFO  : There was nothing to transfer
+2026/08/05 09:12:37 INFO  : 
+Transferred:   	          0 B / 0 B, -, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 7
+Elapsed time:         0.7s
+
+2026/08/05 09:12:37 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 09:12:38 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 09:12:39 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/05 09:12:39 NOTICE: gdrive{5SXnH}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 09:12:47 INFO  : Pre/log_file_20260805_091034.log: Copied (new)
+2026/08/05 09:12:48 INFO  : Pre: Set directory modification time (using DirSetModTime)
+2026/08/05 09:12:48 INFO  : 
+Transferred:   	  128.483 KiB / 128.483 KiB, 100%, 25.696 KiB/s, ETA 0s
+Checks:                 0 / 0, -, Listed 3
+Transferred:            1 / 1, 100%
+Elapsed time:         8.0s
+
