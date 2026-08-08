@@ -15,6 +15,7 @@ SET ADB_PORT=5555
 SET "USB_SERIAL_NUMBER="
 SET "DEVICE_IP="
 SET "STATUS="
+SET "ERRORCODE=0"
 
 echo.
 echo ########## Android Wi-Fi ADB Setup (Optimized) ##########
@@ -38,6 +39,7 @@ FOR /F "skip=1 tokens=1,2" %%A IN ('adb devices') DO (
 
 if not defined USB_SERIAL_NUMBER (
     echo [!] ERROR: No USB device found. Please connect a device and ensure it is authorized.
+    set "ERRORCODE=1"
     goto end
 )
 echo [+] Found device with SN: %USB_SERIAL_NUMBER%
@@ -64,6 +66,7 @@ SET "IP_POLL_ATTEMPTS=0"
 :poll_for_ip
     IF %IP_POLL_ATTEMPTS% GEQ 15 (
         echo [!] ERROR: Timed out waiting for an IP address. Check Wi-Fi credentials and network.
+        set "ERRORCODE=2"
         goto end
     )
     SET /A IP_POLL_ATTEMPTS+=1
@@ -120,10 +123,11 @@ if "%STATUS%"=="device" (
     echo ^| Could not verify a stable wireless connection.
     echo ^| Try running the script again.
     echo +--------------------------------------------------+
+    set "ERRORCODE=3"
 )
 echo.
 
 :end
 
 echo ########## Script Finished ##########
-endlocal
+endlocal & exit /b %ERRORCODE%

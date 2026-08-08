@@ -1,19 +1,39 @@
-C:\Users\User\AppData\Local\Temp\Bazel.runfiles_44_ex771\runfiles\_main\robocal\v5\src\third_party\ai_a\python\soundcheck_tcpip\soundcheck\installation.py:366: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\_main\robocal\v5\src\third_party\ai_a\python\soundcheck_tcpip\soundcheck\installation.py:366: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
   payload = Path(str(self.launcher_path()).replace(' ', '\ '), 'Contents', 'MacOS', 'SoundCheck')
-C:\Users\User\AppData\Local\Temp\Bazel.runfiles_44_ex771\runfiles\_main\robocal\v5\src\third_party\ai_a\python\soundcheck_tcpip\soundcheck\version.py:99: SyntaxWarning: "\^" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\^"? A raw string is also an option.
+C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\_main\robocal\v5\src\third_party\ai_a\python\soundcheck_tcpip\soundcheck\version.py:99: SyntaxWarning: "\^" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\^"? A raw string is also an option.
   pattern = {False: '((-1|[0-9]+|\^)[.])*(-1|[0-9]+|\^)',
-I0808 14:09:41.877264 11112 main.py:57] Using lock file: C:\Users\Public\Google\Robocal\robocalv5.lock
-I0808 14:09:41.939040 11112 logs.py:77] Logging output routed to C:\Users\Public\Google\Robocal\Runs\2026-08-08T14-09-41.918462-Audio\Audio.log
-I0808 14:09:41.939137 11112 station.py:70] Initializing Audio...
-I0808 14:09:41.939293 11112 main.py:72] Running [92mAudio data collection[0m
-I0808 14:09:41.939347 11112 audio_station.py:173] Current step: [33mCHECK_SMOKE_TEST[0m
-I0808 14:09:41.939392 11112 audio_station.py:173] Current step: [33mINITIALIZE[0m
-I0808 14:09:41.941011 11112 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\dut_playback.bat to C:\Users\Public\Google\Robocal\Audio
-I0808 14:09:41.941930 11112 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\get_baseline.bat to C:\Users\Public\Google\Robocal\Audio
-I0808 14:09:41.942753 11112 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\start_recording.bat to C:\Users\Public\Google\Robocal\Audio
-I0808 14:09:41.943752 11112 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\wait_stop.bat to C:\Users\Public\Google\Robocal\Audio
-I0808 14:09:41.949033 11112 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_44_ex771\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\gain_chirp.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
-I0808 14:09:41.962342 11112 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_44_ex771\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\left_only.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
-I0808 14:09:41.970204 11112 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_44_ex771\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\right_only.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
-I0808 14:19:07.392523 11112 job.py:434] Command failed. See logs for full output
-^C
+I0808 14:23:16.412822 28096 main.py:57] Using lock file: C:\Users\Public\Google\Robocal\robocalv5.lock
+I0808 14:23:16.458914 28096 logs.py:77] Logging output routed to C:\Users\Public\Google\Robocal\Runs\2026-08-08T14-23-16.435820-Audio\Audio.log
+I0808 14:23:16.459038 28096 station.py:70] Initializing Audio...
+I0808 14:23:16.459204 28096 main.py:72] Running [92mAudio data collection[0m
+I0808 14:23:16.459266 28096 audio_station.py:173] Current step: [33mCHECK_SMOKE_TEST[0m
+I0808 14:23:16.459317 28096 audio_station.py:173] Current step: [33mINITIALIZE[0m
+I0808 14:23:16.460151 28096 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\dut_playback.bat to C:\Users\Public\Google\Robocal\Audio
+I0808 14:23:16.460556 28096 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\get_baseline.bat to C:\Users\Public\Google\Robocal\Audio
+I0808 14:23:16.460945 28096 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\start_recording.bat to C:\Users\Public\Google\Robocal\Audio
+I0808 14:23:16.461425 28096 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\wait_stop.bat to C:\Users\Public\Google\Robocal\Audio
+I0808 14:23:16.467240 28096 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\gain_chirp.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
+I0808 14:23:16.472416 28096 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\left_only.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
+I0808 14:23:16.477235 28096 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\right_only.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
+I0808 14:34:08.973077 28096 job.py:434] Command failed. See logs for full output
+E0808 14:34:08.973428 28096 main.py:110] ADBConnectionError (Error 300): Failed to list Android devices with ADB.
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\_main\robocal\v5\stations\audio\main.py", line 103, in <module>
+    app.run(main)
+    ~~~~~~~^^^^^^
+  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\rules_python~~pip~pypi_314_absl_py\site-packages\absl\app.py", line 316, in run
+    _run_main(main, args)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\rules_python~~pip~pypi_314_absl_py\site-packages\absl\app.py", line 261, in _run_main
+    sys.exit(main(argv))
+             ~~~~^^^^^^
+  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\_main\robocal\v5\stations\audio\main.py", line 74, in main
+    station.run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\_main\robocal\v5\stations\audio\audio_station.py", line 187, in run
+    adb_ids = adb_tools.get_serial_numbers(True)
+  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_ip5vazt3\runfiles\_main\robolibs\utility\adb_tools.py", line 121, in get_serial_numbers
+    raise errors.ADBConnectionError("Failed to list Android devices with ADB.")
+robolibs.utility.errors.ADBConnectionError: ADBConnectionError (Error 300): Failed to list Android devices with ADB.
+I0808 14:34:08.988378 28096 _api.py:364] Attempting to release lock 1821051471248 on C:\Users\Public\Google\Robocal\robocalv5.lock
+I0808 14:34:08.989304 28096 _api.py:367] Lock 1821051471248 released on C:\Users\Public\Google\Robocal\robocalv5.lock
