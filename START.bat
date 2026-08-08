@@ -189,6 +189,10 @@ find /i "%PROJECT%,N" %CSV_NAME%
 IF %ERRORLEVEL% equ 0 goto ShowFail
 find /i "%PROJECT%,M" %CSV_NAME%
 IF %ERRORLEVEL% equ 0 goto ShowFail
+find /i "%PROJECT%,0x" %CSV_NAME%
+IF %ERRORLEVEL% equ 0 goto ShowFail
+find /i "%PROJECT%,FF" %CSV_NAME%
+IF %ERRORLEVEL% equ 0 goto ShowFail
 cls
 call Screen-diag.exe -enter /ss 70 "unexpected exit or unknow error code happens." 0xFFFFFF -bg 0xBB2222
 goto ShowFail
@@ -198,28 +202,17 @@ SET Result=FAIL
 
 cd %~dp0%FOLDER%
 Tools\UILogResult-auto.exe -log %CSV_NAME% /F
-CALL :UPLOAD_GRR_AND_WAIT_DUT_DISCONNECT
-GOTO jigup
+goto DateCHK
 
 :TestPass
 cd %~dp0
 cd %FOLDER%
 SET Result=PASS
 
-:jigup
-SET /p TSRID=<TSRID.dat
-cd %~dp0%FOLDER%
-
 :DateCHK
 Tools\DateChk-auto.exe /FILE %CSV_NAME%
 IF %ERRORLEVEL% NEQ 0 GOTO CHKFAIL
 goto Backup
-
-:CHKFAIL
-echo %date%_%time% ***(%SN%_%TSRID%)-%CSV_NAME% Time Sync Error,*** >> C:\MFGlog\%TYPE%log\event\_DateChkerror.log
-type DateChk.log >> C:\MFGlog\%TYPE%log\event\_DateChkerror.log
-Tools\Screen-diag.exe -nl -enter /SS 40 "Log Time Error!!<br> <br> Log time is out of sync for SN:%SN%<br>This log will not upload or back up.<br> Please check time sync and retest." 0xFFFFFF -bg 0x882222
-GOTO InteruptErr
 
 :Backup
 LogTransfer-auto.exe -nl /de
@@ -266,13 +259,13 @@ Tools\Screen-diag.exe -nl -enter /ss 70 "SFIS Upload FAIL(%SFISerror%)! <br> <br
 GOTO SFIS
 
 :END
+adb kill-server
 IF "%Result%" NEQ "PASS" GOTO Record
 IF EXIST TSRID.dat DEL TSRID.dat
 Tools\Screen-diag.exe -nl -enter /ss 200 "PASS"  0xFFFFFF -bg 0x008800
 Chopper-diag.exe /delay 500 2>nul
 taskkill /IM Screen-diag.exe
 
-adb kill-server
 GOTO Record
 
 :UPLOAD_GRR_AND_WAIT_DUT_DISCONNECT
