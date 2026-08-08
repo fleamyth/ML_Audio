@@ -49,7 +49,7 @@ IF %ERRORLEVEL% NEQ 0 GOTO START_OP
 
 :START
 DiagPGM\Screen-diag.exe -nl -enter /SS 55 "<br>Please connect the device.<br> <br>Press [Enter] to start the test." 0xFFFFFF -bg 0x223366
-
+adb kill-server
 adb get-state 2>nul | findstr /X /C:"device" >nul
 IF %ERRORLEVEL% NEQ 0 GOTO START
 
@@ -152,6 +152,18 @@ cd %~dp0%FOLDER%
 IF DEFINED TEST_RUN_MARKER DEL /Q "%TEST_RUN_MARKER%" 2>nul
 SET "TEST_RUN_MARKER=%TEMP%\ML_Audio_run_%RANDOM%_%RANDOM%.tmp"
 TYPE NUL >"%TEST_RUN_MARKER%"
+
+set connectRetry=0
+
+:wifi_connect_to_Dut
+call Tools\wifi_connect_fast.bat
+set "wifiResult=%ERRORLEVEL%"
+set /a connectRetry=connectRetry+1
+if %connectRetry% geq 5 goto start
+if %wifiResult% neq 0 goto wifi_connect_to_Dut
+
+Screen-diag.exe -nl -enter /SS 55 "<br>Please remove cable and put the device to the fixture.<br> <br>Press [Enter] to start the test." 0xFFFFFF -bg 0x224466
+
 Chopper-diag.exe -NoHotKey -LD TcsTestSuiteDuration %PROJECT% -c -si -CGV -opf op.dat -SNF SN.dat -sip -TSRID -lock -RL -f %CFG_NAME% -as -ae -SNP "^[0-9,A-Z]{%SN_LEN%}$" -tidf tid.dat -lf ..\DiagPGM\tidlog.xml /r
 IF %ERRORLEVEL% EQU 0 GOTO TestPass
 IF %ERRORLEVEL% EQU 255 GOTO TestFail
@@ -260,7 +272,7 @@ Tools\Screen-diag.exe -nl -enter /ss 200 "PASS"  0xFFFFFF -bg 0x008800
 Chopper-diag.exe /delay 500 2>nul
 taskkill /IM Screen-diag.exe
 
-CALL :UPLOAD_GRR_AND_WAIT_DUT_DISCONNECT
+adb kill-server
 GOTO Record
 
 :UPLOAD_GRR_AND_WAIT_DUT_DISCONNECT
