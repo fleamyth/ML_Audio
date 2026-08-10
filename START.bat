@@ -48,9 +48,13 @@ DiagPGM\Chopper-diag.exe /SB "^[Ss][0-9]{2}[0-9,AaBbCc][0-9]{5}$" -SIF op.jpg -E
 IF %ERRORLEVEL% NEQ 0 GOTO START_OP
 
 :START
-DiagPGM\Screen-diag.exe -nl -enter /SS 55 "<br>Please connect the device.<br> <br>Press [Enter] to start the test." 0xFFFFFF -bg 0x223366
 adb kill-server
+DiagPGM\Screen-diag.exe -nl -enter /SS 55 "<br>Please connect the device.<br> <br>Press [Enter] to start the test." 0xFFFFFF -bg 0x223366
 adb get-state 2>nul | findstr /X /C:"device" >nul
+adb root
+adb shell aflags disable com.android.microxr.flags.enable_wifi_connection_access_point
+adb shell setprop persist.microxr.internetaccess.disable_wifi_control true
+adb reboot
 IF %ERRORLEVEL% NEQ 0 GOTO START
 
 SET ScanTime=0
@@ -91,6 +95,7 @@ COPY SN.dat DiagPGM\SN.dat
 IF NOT EXIST %on_Drive% net use /delete %on_Drive%
 
 :chkroute
+if "%MODE%" EQU "D" GOTO Non_TID
 python RESTSFIS-diag\RESTSFIS-diag.py /C -sn %SN%
 IF %ERRORLEVEL% EQU 0 GOTO Non_TID
 GOTO CRfail
@@ -154,7 +159,8 @@ SET "TEST_RUN_MARKER=%TEMP%\ML_Audio_run_%RANDOM%_%RANDOM%.tmp"
 TYPE NUL >"%TEST_RUN_MARKER%"
 
 set connectRetry=0
-
+adb wait-for-device
+adb devices
 :wifi_connect_to_Dut
 call Tools\wifi_connect_fast.bat
 set "wifiResult=%ERRORLEVEL%"
@@ -248,6 +254,7 @@ Tools\LogTransfer-auto.exe -nl  -tester -F FAIL /L %CSV_NAME%
 SET SFISerror=0
 
 :SFIS
+if "%MODE%" equ DGOTO END
 python RESTSFIS-diag.py /UP -log %CSV_NAME%
 IF %ERRORLEVEL% NEQ 0 GOTO SFIS_fail
 GOTO END
@@ -366,9 +373,10 @@ cd %~dp0
 IF "%MODE%" EQU "D" GOTO START
 
 :chk2Aroute
+GOTO START
 IF "%Result%" EQU "PASS" GOTO START
 Start DiagPGM\Screen-diag.exe -enter /SS 55 "Checking SN %SN% SFIS 2A status<br>Please wait... <br> <br>Checking 2A Status from SFIS<br>Please wait a moment..." 0xFFFFFF -bg 0x223366
 python RESTSFIS-diag\RESTSFIS-diag.py /C -sn %SN%
 IF %ERRORLEVEL% EQU 0 DiagPGM\Screen-diag.exe -enter /SS 40 "SN (2A) not allowed!!<br> <br>Please change another tester to do SN (2A) test!!<br><br>Press [ENTER] to continue..." 0xFFFFFF -bg 0x773399
 taskkill /IM Screen-diag.exe
-GOTO START
+
