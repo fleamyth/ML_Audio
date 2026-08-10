@@ -230,6 +230,7 @@ IF "%MODE%" EQU "D" SET Dest=C:\MFGlog\%TYPE%log\Debug
 IF "%MODE%" EQU "D" SET MISC=C:\MISClog\%PROJECT%\%BUILD%\Debug\%datepath%\%Result%
 
 COPY /y /v %CSV_NAME% .\tools\Temp\
+IF EXIST ".\Tools\AudioE2E.log" COPY /y /v ".\Tools\AudioE2E.log" ".\Tools\Temp\"
 
 cd tools
 del .\MISCLog.zip
