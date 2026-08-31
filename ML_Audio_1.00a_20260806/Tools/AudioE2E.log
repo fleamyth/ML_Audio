@@ -1,146 +1,519 @@
-C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robocal\v5\src\third_party\ai_a\python\soundcheck_tcpip\soundcheck\installation.py:366: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robocal\v5\src\third_party\ai_a\python\soundcheck_tcpip\soundcheck\installation.py:366: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
   payload = Path(str(self.launcher_path()).replace(' ', '\ '), 'Contents', 'MacOS', 'SoundCheck')
-C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robocal\v5\src\third_party\ai_a\python\soundcheck_tcpip\soundcheck\version.py:99: SyntaxWarning: "\^" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\^"? A raw string is also an option.
+C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robocal\v5\src\third_party\ai_a\python\soundcheck_tcpip\soundcheck\version.py:99: SyntaxWarning: "\^" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\^"? A raw string is also an option.
   pattern = {False: '((-1|[0-9]+|\^)[.])*(-1|[0-9]+|\^)',
-I0810 16:18:35.676299 22640 main.py:57] Using lock file: C:\Users\Public\Google\Robocal\robocalv5.lock
-I0810 16:18:35.728055 22640 logs.py:77] Logging output routed to C:\Users\Public\Google\Robocal\Runs\2026-08-10T16-18-35.700532-Audio\Audio.log
-I0810 16:18:35.728156 22640 station.py:70] Initializing Audio...
-I0810 16:18:35.728304 22640 main.py:72] Running [92mAudio data collection[0m
-I0810 16:18:35.728371 22640 audio_station.py:173] Current step: [33mCHECK_SMOKE_TEST[0m
-I0810 16:18:35.728417 22640 audio_station.py:173] Current step: [33mINITIALIZE[0m
-I0810 16:18:35.729253 22640 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\dut_playback.bat to C:\Users\Public\Google\Robocal\Audio
-I0810 16:18:35.729662 22640 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\get_baseline.bat to C:\Users\Public\Google\Robocal\Audio
-I0810 16:18:35.730019 22640 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\start_recording.bat to C:\Users\Public\Google\Robocal\Audio
-I0810 16:18:35.738815 22640 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\wait_stop.bat to C:\Users\Public\Google\Robocal\Audio
-I0810 16:18:35.747199 22640 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\gain_chirp.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
-I0810 16:18:35.755909 22640 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\left_only.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
-I0810 16:18:35.762264 22640 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\right_only.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
-I0810 16:18:35.871004 22640 process.py:49] Initializing AudioProcess...
-I0810 16:18:35.916564 22640 sound_check.py:85] SoundcheckPlugin initialized.
-I0810 16:18:35.916666 22640 sound_check.py:86] the version 23 of soundcheck is going to be used
-I0810 16:18:35.916751 22640 audio_station.py:173] Current step: [33mCONNECT[0m
-I0810 16:18:35.916794 22640 audio_dut.py:35] Connecting to 192.168.0.26:5555
-I0810 16:18:35.916836 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell getprop ro.serialno
-I0810 16:18:36.101458 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell getprop ro.serialno
-I0810 16:18:36.208617 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell getprop ro.build.fingerprint
-I0810 16:18:36.349949 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell getprop ro.product.name
-I0810 16:18:36.430375 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell cat /proc/device-tree/model
-I0810 16:18:36.527969 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell ls /mnt/vendor/persist//device_record.json
-I0810 16:18:36.687345 22640 job.py:434] Command failed. See logs for full output
-I0810 16:18:36.687880 22640 device_record.py:118] no device record found on device at: /mnt/vendor/persist//device_record.json
-I0810 16:18:36.688034 22640 device_record.py:131] Creating new device record for unique_hw_id: S7A673400025
-I0810 16:18:36.688311 22640 audio_station.py:173] Current step: [33mCHECK_DEVICE[0m
-I0810 16:18:36.688500 22640 audio_process.py:413] >>> Starting Task: Clean up old log
-I0810 16:18:36.688606 22640 audio_process.py:421] Executing action: Clean up old log
-I0810 16:18:36.688694 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 logcat -c
-I0810 16:18:36.954162 22640 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
-I0810 16:18:37.454588 22640 audio_process.py:454] Task 'Clean up old log' finished.
-I0810 16:18:37.454996 22640 audio_process.py:413] >>> Starting Task: Clean up local WAV files
-I0810 16:18:37.455141 22640 job.py:212] Running for /f %A in ('dir /a-d /b C:\dut_audio_files\*.wav 2^>nul ^| find /c /v ""') do @echo COUNT=%A
-I0810 16:18:37.534077 22640 audio_process.py:421] Executing action: Clean up local WAV files
-I0810 16:18:37.534192 22640 job.py:212] Running cmd /c "del /q /f C:\dut_audio_files\*.wav"
-I0810 16:18:37.558104 22640 audio_process.py:473] Polling 'Clean up local WAV files' status (Timeout: 3.0s)...
-I0810 16:18:37.558218 22640 job.py:212] Running for /f %A in ('dir /a-d /b C:\dut_audio_files\*.wav 2^>nul ^| find /c /v ""') do @echo COUNT=%A
-I0810 16:18:37.595576 22640 audio_process.py:478] 'Clean up local WAV files' stabilized in 0.04s.
-I0810 16:18:37.595686 22640 audio_process.py:435] Task 'Clean up local WAV files' verified successfully.
-I0810 16:18:37.595728 22640 audio_process.py:413] >>> Starting Task: Clean up device WAV files
-I0810 16:18:37.595764 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell test -f /data/local/*.wav && echo existing || echo OK
-I0810 16:18:37.752045 22640 audio_process.py:418] Task 'Clean up device WAV files' already in desired state. Skipping.
-I0810 16:18:37.752286 22640 audio_process.py:413] >>> Starting Task: Create directory for audio compensation config if not exist
-I0810 16:18:37.752388 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell [ -d /mnt/vendor/persist/audio ] && echo 1 || echo 0
-I0810 16:18:37.883101 22640 audio_process.py:418] Task 'Create directory for audio compensation config if not exist' already in desired state. Skipping.
-I0810 16:18:37.883218 22640 audio_process.py:413] >>> Starting Task: Clean up old audio compensation config xml on device
-I0810 16:18:37.883260 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell test -f /mnt/vendor/persist/audio/audio_params.xml && echo existing || echo OK
-I0810 16:18:38.019584 22640 audio_process.py:418] Task 'Clean up old audio compensation config xml on device' already in desired state. Skipping.
-I0810 16:18:38.019818 22640 audio_process.py:413] >>> Starting Task: Clean up old audio compensation config json on device
-I0810 16:18:38.019912 22640 audio_process.py:421] Executing action: Clean up old audio compensation config json on device
-I0810 16:18:38.019989 22640 job.py:212] Running echo rm -rf /mnt/vendor/persist/audio/*.json | "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell
-I0810 16:18:38.190508 22640 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
-I0810 16:18:38.690913 22640 audio_process.py:454] Task 'Clean up old audio compensation config json on device' finished.
-I0810 16:18:38.691297 22640 audio_process.py:413] >>> Starting Task: Set screen off timeout to 10 minutes
-I0810 16:18:38.691454 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell settings get system screen_off_timeout
-I0810 16:18:38.926895 22640 audio_process.py:418] Task 'Set screen off timeout to 10 minutes' already in desired state. Skipping.
-I0810 16:18:38.927040 22640 audio_process.py:413] >>> Starting Task: Wake up the device
-I0810 16:18:38.927087 22640 audio_process.py:421] Executing action: Wake up the device
-I0810 16:18:38.927129 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell input keyevent KEYCODE_WAKEUP
-I0810 16:18:39.115659 22640 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
-I0810 16:18:39.616487 22640 audio_process.py:454] Task 'Wake up the device' finished.
-I0810 16:18:39.616873 22640 audio_process.py:413] >>> Starting Task: Enable interacting with the projection client on the DUT
-I0810 16:18:39.616996 22640 audio_process.py:421] Executing action: Enable interacting with the projection client on the DUT
-I0810 16:18:39.617105 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 forward tcp:8888 tcp:8892
-I0810 16:18:39.659224 22640 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
-I0810 16:18:40.159547 22640 audio_process.py:454] Task 'Enable interacting with the projection client on the DUT' finished.
-I0810 16:18:40.159897 22640 audio_process.py:456] All pre-condition commands completed.
-I0810 16:18:40.160017 22640 audio_dut.py:39] Checking prerequisite stations...
-I0810 16:18:40.160152 22640 audio_station.py:173] Current step: [33mOK_2_CAL[0m
-I0810 16:18:40.160263 22640 audio_process.py:570] Getting device serial number and build...
-I0810 16:18:40.160382 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell getprop ro.build.fingerprint
-I0810 16:18:40.307648 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell getprop ro.serialno
-I0810 16:18:40.399005 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell getprop ro.serialno
-I0810 16:18:40.498684 22640 job.py:212] Running hostname
-I0810 16:18:40.524589 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell cat efs/imei/prodcode.dat
-I0810 16:18:40.649078 22640 job.py:434] Command failed. See logs for full output
-I0810 16:18:40.649712 22640 audio_process.py:235] Device ID: S7A673400025
-I0810 16:18:40.649914 22640 audio_process.py:236] Build: google/barney_evt1_factory/barney_evt1:16/BP3A.250905.014/P129600868:userdebug/test-keys
-I0810 16:18:40.650036 22640 audio_process.py:237] Station ID: DESKTOP-ITU8ATO
-I0810 16:18:40.650112 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell "cat /sys/class/power_supply/max1720x_battery/capacity"
-I0810 16:18:40.802278 22640 audio_process.py:413] >>> Starting Task: Clean up temp files on the devices
-I0810 16:18:40.802586 22640 audio_process.py:421] Executing action: Clean up temp files on the devices
-I0810 16:18:40.802721 22640 job.py:212] Running echo rm -f /data/local/tmp/mcu_* | "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell
-I0810 16:18:40.958241 22640 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
-I0810 16:18:41.458974 22640 audio_process.py:454] Task 'Clean up temp files on the devices' finished.
-I0810 16:18:41.459416 22640 audio_process.py:413] >>> Starting Task: Soft-stop the device
-I0810 16:18:41.459560 22640 audio_process.py:421] Executing action: Soft-stop the device
-I0810 16:18:41.459695 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell stop microxr-mcu-manager
-I0810 16:18:41.695583 22640 audio_process.py:452] No required verification. Sleeping for 1.0s safety delay...
-I0810 16:18:42.696009 22640 audio_process.py:454] Task 'Soft-stop the device' finished.
-I0810 16:18:42.696367 22640 audio_process.py:413] >>> Starting Task: Soft-start the device
-I0810 16:18:42.696516 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell microxr-mcu-ctl ping-async
-I0810 16:18:44.076287 22640 job.py:434] Command failed. See logs for full output
-I0810 16:18:44.076504 22640 audio_process.py:421] Executing action: Soft-start the device
-I0810 16:18:44.076556 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell start microxr-mcu-manager
-I0810 16:18:44.182146 22640 audio_process.py:473] Polling 'Soft-start the device' status (Timeout: 10.0s)...
-I0810 16:18:44.182436 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell microxr-mcu-ctl ping-async
-I0810 16:18:45.358006 22640 job.py:434] Command failed. See logs for full output
-I0810 16:18:45.858501 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell microxr-mcu-ctl ping-async
-I0810 16:18:47.121810 22640 job.py:434] Command failed. See logs for full output
-I0810 16:18:47.622485 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell microxr-mcu-ctl ping-async
-I0810 16:18:48.864766 22640 job.py:434] Command failed. See logs for full output
-I0810 16:18:49.365498 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell microxr-mcu-ctl ping-async
-I0810 16:18:50.610814 22640 job.py:434] Command failed. See logs for full output
-I0810 16:18:51.111125 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell microxr-mcu-ctl ping-async
-I0810 16:18:52.357600 22640 job.py:434] Command failed. See logs for full output
-I0810 16:18:52.858551 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell microxr-mcu-ctl ping-async
-I0810 16:18:54.078943 22640 job.py:434] Command failed. See logs for full output
-I0810 16:18:54.580092 22640 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell microxr-mcu-ctl ping-async
-I0810 16:18:55.805681 22640 job.py:434] Command failed. See logs for full output
-E0810 16:18:55.806230 22640 main.py:110] AudioCalibrationFailureError (Error 204): Pre-condition verification failed: Soft-start the device (Timeout after 10.0s)
-check_cmd: "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell microxr-mcu-ctl ping-async
-expected_output: 0
-Traceback (most recent call last):
-  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robocal\v5\stations\audio\main.py", line 103, in <module>
-    app.run(main)
-    ~~~~~~~^^^^^^
-  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\rules_python~~pip~pypi_314_absl_py\site-packages\absl\app.py", line 316, in run
-    _run_main(main, args)
-    ~~~~~~~~~^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\rules_python~~pip~pypi_314_absl_py\site-packages\absl\app.py", line 261, in _run_main
-    sys.exit(main(argv))
-             ~~~~^^^^^^
-  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robocal\v5\stations\audio\main.py", line 74, in main
-    station.run()
-    ~~~~~~~~~~~^^
-  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robocal\v5\stations\audio\audio_station.py", line 209, in run
-    return_status = self.process.run_ok2cal()
-  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robocal\v5\stations\audio\audio\audio_process.py", line 590, in run_ok2cal
-    self.run_condition_flows(self.pre_condition_commands)
-    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robocal\v5\stations\audio\audio\audio_process.py", line 437, in run_condition_flows
-    raise robocal_errors.AudioCalibrationFailureError(
-    ...<3 lines>...
-    )
-robocal.v5.src.utility.robocal_errors.AudioCalibrationFailureError: AudioCalibrationFailureError (Error 204): Pre-condition verification failed: Soft-start the device (Timeout after 10.0s)
-check_cmd: "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_kw_1rqiu\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.26:5555 shell microxr-mcu-ctl ping-async
-expected_output: 0
-I0810 16:18:55.818492 22640 _api.py:364] Attempting to release lock 2189399524752 on C:\Users\Public\Google\Robocal\robocalv5.lock
-I0810 16:18:55.819158 22640 _api.py:367] Lock 2189399524752 released on C:\Users\Public\Google\Robocal\robocalv5.lock
+I0811 14:07:41.641674 20944 main.py:57] Using lock file: C:\Users\Public\Google\Robocal\robocalv5.lock
+I0811 14:07:41.694045 20944 logs.py:77] Logging output routed to C:\Users\Public\Google\Robocal\Runs\2026-08-11T14-07-41.671944-Audio\Audio.log
+I0811 14:07:41.694145 20944 station.py:70] Initializing Audio...
+I0811 14:07:41.694294 20944 main.py:72] Running [92mAudio data collection[0m
+I0811 14:07:41.694348 20944 audio_station.py:173] Current step: [33mCHECK_SMOKE_TEST[0m
+I0811 14:07:41.694395 20944 audio_station.py:173] Current step: [33mINITIALIZE[0m
+I0811 14:07:41.696009 20944 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\dut_playback.bat to C:\Users\Public\Google\Robocal\Audio
+I0811 14:07:41.696984 20944 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\get_baseline.bat to C:\Users\Public\Google\Robocal\Audio
+I0811 14:07:41.697827 20944 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\start_recording.bat to C:\Users\Public\Google\Robocal\Audio
+I0811 14:07:41.700388 20944 audio_station.py:90] Copied C:\Users\User\Robocal-v5_Audio\robocal\v5\stations\audio\capturing\apropos\wait_stop.bat to C:\Users\Public\Google\Robocal\Audio
+I0811 14:07:41.706076 20944 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\gain_chirp.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
+I0811 14:07:41.712483 20944 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\left_only.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
+I0811 14:07:41.717546 20944 audio_station.py:127] Copied C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robocal\v5\src\assets\audio\audio_files\16bit\right_only.wav to C:\Users\Public\Google\Robocal\Audio\dut_spk
+I0811 14:07:41.823836 20944 process.py:49] Initializing AudioProcess...
+I0811 14:07:41.872932 20944 sound_check.py:85] SoundcheckPlugin initialized.
+I0811 14:07:41.873031 20944 sound_check.py:86] the version 23 of soundcheck is going to be used
+I0811 14:07:41.873109 20944 audio_station.py:173] Current step: [33mCONNECT[0m
+I0811 14:07:41.873149 20944 audio_dut.py:35] Connecting to 192.168.0.224:5555
+I0811 14:07:41.873189 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell getprop ro.serialno
+I0811 14:07:42.022995 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell getprop ro.serialno
+I0811 14:07:42.154789 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell getprop ro.build.fingerprint
+I0811 14:07:42.302810 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell getprop ro.product.name
+I0811 14:07:42.437253 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell cat /proc/device-tree/model
+I0811 14:07:42.549367 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell ls /mnt/vendor/persist//device_record.json
+I0811 14:07:42.708450 20944 job.py:434] Command failed. See logs for full output
+I0811 14:07:42.708767 20944 device_record.py:118] no device record found on device at: /mnt/vendor/persist//device_record.json
+I0811 14:07:42.708862 20944 device_record.py:131] Creating new device record for unique_hw_id: S7A67330000T
+I0811 14:07:42.709033 20944 audio_station.py:173] Current step: [33mCHECK_DEVICE[0m
+I0811 14:07:42.709139 20944 audio_process.py:413] >>> Starting Task: Clean up old log
+I0811 14:07:42.709202 20944 audio_process.py:421] Executing action: Clean up old log
+I0811 14:07:42.709261 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 logcat -c
+I0811 14:07:42.964454 20944 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
+I0811 14:07:43.464946 20944 audio_process.py:454] Task 'Clean up old log' finished.
+I0811 14:07:43.465245 20944 audio_process.py:413] >>> Starting Task: Clean up local WAV files
+I0811 14:07:43.465423 20944 job.py:212] Running for /f %A in ('dir /a-d /b C:\dut_audio_files\*.wav 2^>nul ^| find /c /v ""') do @echo COUNT=%A
+I0811 14:07:43.517178 20944 audio_process.py:418] Task 'Clean up local WAV files' already in desired state. Skipping.
+I0811 14:07:43.517295 20944 audio_process.py:413] >>> Starting Task: Clean up device WAV files
+I0811 14:07:43.517342 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell test -f /data/local/*.wav && echo existing || echo OK
+I0811 14:07:43.632370 20944 audio_process.py:418] Task 'Clean up device WAV files' already in desired state. Skipping.
+I0811 14:07:43.632573 20944 audio_process.py:413] >>> Starting Task: Create directory for audio compensation config if not exist
+I0811 14:07:43.632651 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell [ -d /mnt/vendor/persist/audio ] && echo 1 || echo 0
+I0811 14:07:43.767220 20944 audio_process.py:421] Executing action: Create directory for audio compensation config if not exist
+I0811 14:07:43.767519 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell mkdir -p /mnt/vendor/persist/audio
+I0811 14:07:43.914230 20944 audio_process.py:473] Polling 'Create directory for audio compensation config if not exist' status (Timeout: 3.0s)...
+I0811 14:07:43.914545 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell [ -d /mnt/vendor/persist/audio ] && echo 1 || echo 0
+I0811 14:07:44.034836 20944 audio_process.py:478] 'Create directory for audio compensation config if not exist' stabilized in 0.12s.
+I0811 14:07:44.035124 20944 audio_process.py:435] Task 'Create directory for audio compensation config if not exist' verified successfully.
+I0811 14:07:44.035254 20944 audio_process.py:413] >>> Starting Task: Clean up old audio compensation config xml on device
+I0811 14:07:44.035356 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell test -f /mnt/vendor/persist/audio/audio_params.xml && echo existing || echo OK
+I0811 14:07:44.146038 20944 audio_process.py:418] Task 'Clean up old audio compensation config xml on device' already in desired state. Skipping.
+I0811 14:07:44.146159 20944 audio_process.py:413] >>> Starting Task: Clean up old audio compensation config json on device
+I0811 14:07:44.146196 20944 audio_process.py:421] Executing action: Clean up old audio compensation config json on device
+I0811 14:07:44.146229 20944 job.py:212] Running echo rm -rf /mnt/vendor/persist/audio/*.json | "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell
+I0811 14:07:44.306388 20944 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
+I0811 14:07:44.807110 20944 audio_process.py:454] Task 'Clean up old audio compensation config json on device' finished.
+I0811 14:07:44.807570 20944 audio_process.py:413] >>> Starting Task: Set screen off timeout to 10 minutes
+I0811 14:07:44.807737 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell settings get system screen_off_timeout
+I0811 14:07:44.930102 20944 audio_process.py:418] Task 'Set screen off timeout to 10 minutes' already in desired state. Skipping.
+I0811 14:07:44.930224 20944 audio_process.py:413] >>> Starting Task: Wake up the device
+I0811 14:07:44.930261 20944 audio_process.py:421] Executing action: Wake up the device
+I0811 14:07:44.930296 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell input keyevent KEYCODE_WAKEUP
+I0811 14:07:45.094348 20944 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
+I0811 14:07:45.594971 20944 audio_process.py:454] Task 'Wake up the device' finished.
+I0811 14:07:45.595317 20944 audio_process.py:413] >>> Starting Task: Enable interacting with the projection client on the DUT
+I0811 14:07:45.595446 20944 audio_process.py:421] Executing action: Enable interacting with the projection client on the DUT
+I0811 14:07:45.595572 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 forward tcp:8888 tcp:8892
+I0811 14:07:45.642812 20944 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
+I0811 14:07:46.143109 20944 audio_process.py:454] Task 'Enable interacting with the projection client on the DUT' finished.
+I0811 14:07:46.143452 20944 audio_process.py:456] All pre-condition commands completed.
+I0811 14:07:46.143573 20944 audio_dut.py:39] Checking prerequisite stations...
+I0811 14:07:46.143716 20944 audio_station.py:173] Current step: [33mOK_2_CAL[0m
+I0811 14:07:46.143834 20944 audio_process.py:570] Getting device serial number and build...
+I0811 14:07:46.143951 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell getprop ro.build.fingerprint
+I0811 14:07:46.266880 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell getprop ro.serialno
+I0811 14:07:46.374423 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell getprop ro.serialno
+I0811 14:07:46.477098 20944 job.py:212] Running hostname
+I0811 14:07:46.503375 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell cat efs/imei/prodcode.dat
+I0811 14:07:46.627531 20944 job.py:434] Command failed. See logs for full output
+I0811 14:07:46.627893 20944 audio_process.py:235] Device ID: S7A67330000T
+I0811 14:07:46.627985 20944 audio_process.py:236] Build: google/barney_evt1_factory/barney_evt1:16/BGQ4.260630.002/15760404:userdebug/test-keys
+I0811 14:07:46.628046 20944 audio_process.py:237] Station ID: DESKTOP-ITU8ATO
+I0811 14:07:46.628106 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell "cat /sys/class/power_supply/max1720x_battery/capacity"
+I0811 14:07:46.792973 20944 audio_process.py:413] >>> Starting Task: Clean up temp files on the devices
+I0811 14:07:46.793221 20944 audio_process.py:421] Executing action: Clean up temp files on the devices
+I0811 14:07:46.793332 20944 job.py:212] Running echo rm -f /data/local/tmp/mcu_* | "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell
+I0811 14:07:46.933672 20944 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
+I0811 14:07:47.434153 20944 audio_process.py:454] Task 'Clean up temp files on the devices' finished.
+I0811 14:07:47.434554 20944 audio_process.py:413] >>> Starting Task: Soft-stop the device
+I0811 14:07:47.434679 20944 audio_process.py:421] Executing action: Soft-stop the device
+I0811 14:07:47.434791 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell stop microxr-mcu-manager
+I0811 14:07:47.678471 20944 audio_process.py:452] No required verification. Sleeping for 1.0s safety delay...
+I0811 14:07:48.679031 20944 audio_process.py:454] Task 'Soft-stop the device' finished.
+I0811 14:07:48.679425 20944 audio_process.py:413] >>> Starting Task: Soft-start the device
+I0811 14:07:48.679566 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:07:49.924042 20944 job.py:434] Command failed. See logs for full output
+I0811 14:07:49.924381 20944 audio_process.py:421] Executing action: Soft-start the device
+I0811 14:07:49.924481 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell start microxr-mcu-manager
+I0811 14:07:50.100887 20944 audio_process.py:473] Polling 'Soft-start the device' status (Timeout: 10.0s)...
+I0811 14:07:50.101189 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:07:51.284574 20944 job.py:434] Command failed. See logs for full output
+I0811 14:07:51.785278 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:07:52.984791 20944 job.py:434] Command failed. See logs for full output
+I0811 14:07:53.485325 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:07:54.744845 20944 job.py:434] Command failed. See logs for full output
+I0811 14:07:55.245859 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:07:56.495247 20944 job.py:434] Command failed. See logs for full output
+I0811 14:07:56.996017 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:07:58.203568 20944 job.py:434] Command failed. See logs for full output
+I0811 14:07:58.704409 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:07:59.685981 20944 audio_process.py:478] 'Soft-start the device' stabilized in 9.59s.
+I0811 14:07:59.686223 20944 audio_process.py:435] Task 'Soft-start the device' verified successfully.
+I0811 14:07:59.686322 20944 audio_process.py:413] >>> Starting Task: Disable EQ filter
+I0811 14:07:59.686437 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl periph-reg-read -i audio -s 32 -r 1
+I0811 14:07:59.968606 20944 audio_process.py:421] Executing action: Disable EQ filter
+I0811 14:07:59.968790 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl periph-reg-write -i audio -r 1 -s 32 -v 0xFFF
+I0811 14:08:00.112169 20944 audio_process.py:473] Polling 'Disable EQ filter' status (Timeout: 10.0s)...
+I0811 14:08:00.112368 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl periph-reg-read -i audio -s 32 -r 1
+I0811 14:08:00.236351 20944 audio_process.py:478] 'Disable EQ filter' stabilized in 0.12s.
+I0811 14:08:00.236470 20944 audio_process.py:435] Task 'Disable EQ filter' verified successfully.
+I0811 14:08:00.236517 20944 audio_process.py:413] >>> Starting Task: Disable SystemUI to prevent volume overwrites
+I0811 14:08:00.236557 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell dumpsys package com.android.microxr.systemui | findstr enabled
+I0811 14:08:00.530554 20944 audio_process.py:421] Executing action: Disable SystemUI to prevent volume overwrites
+I0811 14:08:00.530856 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell pm disable com.android.microxr.systemui
+I0811 14:08:00.702196 20944 audio_process.py:473] Polling 'Disable SystemUI to prevent volume overwrites' status (Timeout: 10.0s)...
+I0811 14:08:00.702412 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell dumpsys package com.android.microxr.systemui | findstr enabled
+I0811 14:08:00.842496 20944 audio_process.py:478] 'Disable SystemUI to prevent volume overwrites' stabilized in 0.14s.
+I0811 14:08:00.842732 20944 audio_process.py:435] Task 'Disable SystemUI to prevent volume overwrites' verified successfully.
+I0811 14:08:00.842842 20944 audio_process.py:413] >>> Starting Task: Set speaker output volume
+I0811 14:08:00.842944 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell cmd media_session volume --get
+I0811 14:08:00.926684 20944 audio_process.py:421] Executing action: Set speaker output volume
+I0811 14:08:00.926890 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell cmd media_session volume --stream 3 --set 100
+I0811 14:08:01.043168 20944 audio_process.py:473] Polling 'Set speaker output volume' status (Timeout: 3.0s)...
+I0811 14:08:01.043381 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell cmd media_session volume --get
+I0811 14:08:01.147044 20944 audio_process.py:478] 'Set speaker output volume' stabilized in 0.1s.
+I0811 14:08:01.147159 20944 audio_process.py:435] Task 'Set speaker output volume' verified successfully.
+I0811 14:08:01.147198 20944 audio_process.py:456] All pre-condition commands completed.
+I0811 14:08:01.147240 20944 sound_check.py:125] Starting Soundcheck audio test thread...
+I0811 14:08:01.147500  5424 soundcheck_audio.py:557] Generated Run Timestamp: 20260811_140801
+I0811 14:08:01.239901  5424 soundcheck_audio.py:267] Wrote timestamp marker: C:\sc_data\robocal_S7A67330000T_20260811_140801\last_timestamp.txt
+I0811 14:08:01.336425  5424 soundcheck_audio.py:593] Opening sequence: C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robocal\v5\src\third_party\ai_a\python\sequence\fa_audio23.sqc
+I0811 14:08:05.492847  5424 soundcheck_audio.py:601] Running sequence... run_ts=20260811_140801 sn=S7A67330000T
+I0811 14:09:07.207065  5424 soundcheck_audio.py:281] CONFIG[refmic_noise_start_time] | 1 | 1.1
+I0811 14:09:07.210553  5424 soundcheck_audio.py:281] CONFIG[refmic_noise_end_time] | 2 | 1.3
+I0811 14:09:07.213884  5424 soundcheck_audio.py:281] CONFIG[dut_trigger_caputre_start_time] | 3 | 0.2
+I0811 14:09:07.217835  5424 soundcheck_audio.py:281] CONFIG[dut_trigger_caputre_end_time] | 4 | 1.0
+I0811 14:09:07.221436  5424 soundcheck_audio.py:281] CONFIG[highpass_filter] | 5 | 20
+I0811 14:09:07.225081  5424 soundcheck_audio.py:281] CONFIG[lowpass_filter] | 6 | 20000
+I0811 14:09:07.228941  5424 soundcheck_audio.py:281] CONFIG[signal_detector] | 7 | 0.3
+I0811 14:09:07.229032  5424 soundcheck_audio.py:610] Getting delays...
+I0811 14:09:07.261258  5424 soundcheck_audio.py:613] Getting microphone curves and values...
+I0811 14:09:07.357000  5424 soundcheck_audio.py:615] Getting speaker curves and values...
+I0811 14:09:07.401144  5424 soundcheck_audio.py:1033] Microphone is over the cal-pass.
+I0811 14:09:07.401333  5424 soundcheck_audio.py:1062] Speaker is over cal-pass.
+I0811 14:09:07.401382  5424 soundcheck_audio.py:224] Audio result: AudioStatus.NEED_GAIN_COMPENSATION
+W0811 14:09:07.401417  5424 soundcheck_audio.py:228] Microphone diff 3.49 dB at 400 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401447  5424 soundcheck_audio.py:228] Microphone diff 3.30 dB at 425 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401473  5424 soundcheck_audio.py:228] Microphone diff 3.13 dB at 450 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401496  5424 soundcheck_audio.py:228] Microphone diff 3.00 dB at 475 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401519  5424 soundcheck_audio.py:228] Microphone diff 2.90 dB at 500 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401542  5424 soundcheck_audio.py:228] Microphone diff 2.79 dB at 530 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401567  5424 soundcheck_audio.py:228] Microphone diff 2.65 dB at 560 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401594  5424 soundcheck_audio.py:228] Microphone diff 2.50 dB is acceptable at 600 Hz < 2.5 dB.
+W0811 14:09:07.401618  5424 soundcheck_audio.py:228] Microphone diff 2.37 dB is acceptable at 630 Hz < 2.5 dB.
+W0811 14:09:07.401640  5424 soundcheck_audio.py:228] Microphone diff 2.39 dB is acceptable at 670 Hz < 2.5 dB.
+W0811 14:09:07.401662  5424 soundcheck_audio.py:228] Microphone diff 2.54 dB at 710 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401684  5424 soundcheck_audio.py:228] Microphone diff 2.73 dB at 750 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401705  5424 soundcheck_audio.py:228] Microphone diff 2.85 dB at 800 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401726  5424 soundcheck_audio.py:228] Microphone diff 2.85 dB at 850 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401747  5424 soundcheck_audio.py:228] Microphone diff 2.90 dB at 900 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401768  5424 soundcheck_audio.py:228] Microphone diff 3.11 dB at 950 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401790  5424 soundcheck_audio.py:228] Microphone diff 3.35 dB at 1000 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401817  5424 soundcheck_audio.py:228] Microphone diff 3.52 dB at 1060 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401840  5424 soundcheck_audio.py:228] Microphone diff 3.42 dB at 1120 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401862  5424 soundcheck_audio.py:228] Microphone diff 2.80 dB at 1180 Hz > 2.5, < 6.5 dB.
+W0811 14:09:07.401884  5424 soundcheck_audio.py:228] Microphone diff 1.70 dB is acceptable at 1250 Hz < 2.5 dB.
+W0811 14:09:07.401905  5424 soundcheck_audio.py:228] Microphone diff 1.04 dB is acceptable at 1320 Hz < 2.5 dB.
+W0811 14:09:07.401928  5424 soundcheck_audio.py:228] Microphone diff 1.27 dB is acceptable at 1400 Hz < 2.5 dB.
+W0811 14:09:07.401951  5424 soundcheck_audio.py:228] Microphone diff 2.05 dB is acceptable at 1500 Hz < 2.5 dB.
+W0811 14:09:07.401972  5424 soundcheck_audio.py:228] Microphone diff 2.01 dB is acceptable at 1600 Hz < 2.5 dB.
+W0811 14:09:07.401994  5424 soundcheck_audio.py:228] Microphone diff 1.70 dB is acceptable at 1700 Hz < 2.5 dB.
+W0811 14:09:07.402015  5424 soundcheck_audio.py:228] Microphone diff 1.72 dB is acceptable at 1800 Hz < 2.5 dB.
+W0811 14:09:07.402037  5424 soundcheck_audio.py:228] Microphone diff 1.81 dB is acceptable at 1900 Hz < 2.5 dB.
+W0811 14:09:07.402059  5424 soundcheck_audio.py:228] Microphone diff 2.06 dB is acceptable at 2000 Hz < 2.5 dB.
+W0811 14:09:07.402079  5424 soundcheck_audio.py:228] Microphone diff 2.06 dB is acceptable at 2000 Hz < 4.4 dB.
+W0811 14:09:07.402100  5424 soundcheck_audio.py:228] Microphone diff 2.89 dB is acceptable at 2120 Hz < 4.4 dB.
+W0811 14:09:07.402121  5424 soundcheck_audio.py:228] Microphone diff 3.89 dB is acceptable at 2240 Hz < 4.4 dB.
+W0811 14:09:07.402141  5424 soundcheck_audio.py:228] Microphone diff 5.38 dB at 2360 Hz > 4.4, < 8.4 dB.
+W0811 14:09:07.402162  5424 soundcheck_audio.py:228] Microphone diff 6.10 dB at 2500 Hz > 4.4, < 8.4 dB.
+W0811 14:09:07.402184  5424 soundcheck_audio.py:228] Microphone diff 4.94 dB at 2650 Hz > 4.4, < 8.4 dB.
+W0811 14:09:07.402205  5424 soundcheck_audio.py:228] Microphone diff 4.42 dB at 2800 Hz > 4.4, < 8.4 dB.
+W0811 14:09:07.402227  5424 soundcheck_audio.py:228] Microphone diff 5.59 dB at 3000 Hz > 4.4, < 8.4 dB.
+W0811 14:09:07.402263  5424 soundcheck_audio.py:228] Microphone diff 6.51 dB at 3150 Hz > 4.4, < 8.4 dB.
+W0811 14:09:07.402288  5424 soundcheck_audio.py:228] Microphone diff 4.40 dB at 3350 Hz > 4.4, < 8.4 dB.
+W0811 14:09:07.402312  5424 soundcheck_audio.py:228] Microphone diff 4.08 dB is acceptable at 3550 Hz < 4.4 dB.
+W0811 14:09:07.402334  5424 soundcheck_audio.py:228] Microphone diff 3.65 dB is acceptable at 3750 Hz < 4.4 dB.
+W0811 14:09:07.402355  5424 soundcheck_audio.py:228] Microphone diff 4.22 dB is acceptable at 4000 Hz < 4.4 dB.
+W0811 14:09:07.402376  5424 soundcheck_audio.py:228] Speaker diff 1.17 dB is acceptable at 400 Hz < 2.0 dB.
+W0811 14:09:07.402399  5424 soundcheck_audio.py:228] Speaker diff 1.11 dB is acceptable at 425 Hz < 2.0 dB.
+W0811 14:09:07.402420  5424 soundcheck_audio.py:228] Speaker diff 1.05 dB is acceptable at 450 Hz < 2.0 dB.
+W0811 14:09:07.402441  5424 soundcheck_audio.py:228] Speaker diff 1.10 dB is acceptable at 475 Hz < 2.0 dB.
+W0811 14:09:07.402462  5424 soundcheck_audio.py:228] Speaker diff 1.31 dB is acceptable at 500 Hz < 2.0 dB.
+W0811 14:09:07.402483  5424 soundcheck_audio.py:228] Speaker diff 1.63 dB is acceptable at 530 Hz < 2.0 dB.
+W0811 14:09:07.402504  5424 soundcheck_audio.py:228] Speaker diff 1.92 dB is acceptable at 560 Hz < 2.0 dB.
+W0811 14:09:07.402525  5424 soundcheck_audio.py:228] Speaker diff 2.03 dB at 600 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402547  5424 soundcheck_audio.py:228] Speaker diff 1.97 dB is acceptable at 630 Hz < 2.0 dB.
+W0811 14:09:07.402569  5424 soundcheck_audio.py:228] Speaker diff 1.92 dB is acceptable at 670 Hz < 2.0 dB.
+W0811 14:09:07.402591  5424 soundcheck_audio.py:228] Speaker diff 2.10 dB at 710 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402613  5424 soundcheck_audio.py:228] Speaker diff 2.51 dB at 750 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402635  5424 soundcheck_audio.py:228] Speaker diff 2.97 dB at 800 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402656  5424 soundcheck_audio.py:228] Speaker diff 3.44 dB at 850 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402676  5424 soundcheck_audio.py:228] Speaker diff 3.89 dB at 900 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402698  5424 soundcheck_audio.py:228] Speaker diff 4.36 dB at 950 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402720  5424 soundcheck_audio.py:228] Speaker diff 4.63 dB at 1000 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402745  5424 soundcheck_audio.py:228] Speaker diff 4.43 dB at 1060 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402769  5424 soundcheck_audio.py:228] Speaker diff 3.72 dB at 1120 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402791  5424 soundcheck_audio.py:228] Speaker diff 2.68 dB at 1180 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402813  5424 soundcheck_audio.py:228] Speaker diff 1.76 dB is acceptable at 1250 Hz < 2.0 dB.
+W0811 14:09:07.402834  5424 soundcheck_audio.py:228] Speaker diff 1.41 dB is acceptable at 1320 Hz < 2.0 dB.
+W0811 14:09:07.402855  5424 soundcheck_audio.py:228] Speaker diff 1.60 dB is acceptable at 1400 Hz < 2.0 dB.
+W0811 14:09:07.402876  5424 soundcheck_audio.py:228] Speaker diff 2.01 dB at 1500 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402897  5424 soundcheck_audio.py:228] Speaker diff 2.34 dB at 1600 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402918  5424 soundcheck_audio.py:228] Speaker diff 2.44 dB at 1700 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402939  5424 soundcheck_audio.py:228] Speaker diff 2.34 dB at 1800 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402960  5424 soundcheck_audio.py:228] Speaker diff 2.17 dB at 1900 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.402982  5424 soundcheck_audio.py:228] Speaker diff 2.12 dB at 2000 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.403003  5424 soundcheck_audio.py:228] Speaker diff 2.41 dB at 2120 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.403024  5424 soundcheck_audio.py:228] Speaker diff 3.50 dB at 2240 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.403045  5424 soundcheck_audio.py:228] Speaker diff 3.99 dB at 2360 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.403066  5424 soundcheck_audio.py:228] Speaker diff 2.77 dB at 2500 Hz > 2.0, < 6.0 dB.
+W0811 14:09:07.403088  5424 soundcheck_audio.py:228] Speaker diff 1.69 dB is acceptable at 2650 Hz < 2.0 dB.
+W0811 14:09:07.403113  5424 soundcheck_audio.py:228] Speaker diff 1.39 dB is acceptable at 2800 Hz < 2.0 dB.
+W0811 14:09:07.403136  5424 soundcheck_audio.py:228] Speaker diff 1.92 dB is acceptable at 3000 Hz < 2.0 dB.
+W0811 14:09:07.403157  5424 soundcheck_audio.py:228] Speaker diff 2.46 dB at 3150 Hz > 2.0, < 6.0 dB.
+I0811 14:09:07.925781  5424 sound_workflow_util.py:79] Successfully pushed audio_test_results_20260811_140801.json to Android device
+I0811 14:09:07.926005  5424 soundcheck_audio.py:530] Pushed audio_test_results_20260811_140801.json to Android at /sdcard/adc_result/robocal_S7A67330000T_20260811_140801
+I0811 14:09:07.944009 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" shell "[ -f 'mnt/vendor/persist/audio/audio_params.xml' ] && echo '1' || echo '0'
+I0811 14:09:08.039141 20944 sound_check.py:159] xml check result exit status: 0
+I0811 14:09:08.039262 20944 sound_check.py:160] xml check result file found: 0
+I0811 14:09:08.039310 20944 audio_process.py:605] First audio_status: AudioStatus.NEED_GAIN_COMPENSATION
+I0811 14:09:08.039394 20944 audio_process.py:612] Running post-processing for soundcheck results...
+I0811 14:09:08.068657 20944 process_speaker_mic_data.py:168] Using folders:
+Local: C:\sc_data\robocal_S7A67330000T_20260811_140801
+Device: /sdcard/adc_result/
+I0811 14:09:08.068868 20944 process_speaker_mic_data.py:35] Reading audio data from: C:\sc_data\robocal_S7A67330000T_20260811_140801\audio_test_results_20260811_140801.json
+I0811 14:09:08.070998 20944 process_speaker_mic_data.py:176] Saved compensation results ==> C:\sc_data\robocal_S7A67330000T_20260811_140801\audio_compensation_20260811_140801.json
+I0811 14:09:08.071114 20944 job.py:212] Running adb push "C:\sc_data\robocal_S7A67330000T_20260811_140801\audio_compensation_20260811_140801.json" "/sdcard/adc_result//"
+I0811 14:09:08.181126 20944 process_speaker_mic_data.py:183] Compensation results json pushed successfully to /sdcard/adc_result/
+I0811 14:09:08.181484 20944 job.py:212] Running adb push "C:\sc_data\robocal_S7A67330000T_20260811_140801\audio_compensation_20260811_140801.json" "mnt/vendor/persist/audio//"
+I0811 14:09:08.244179 20944 process_speaker_mic_data.py:183] Compensation results json pushed successfully to mnt/vendor/persist/audio/
+I0811 14:09:08.244347 20944 process_speaker_mic_data.py:190] Speaker Differences (Reduce first, boost min. if needed):
+I0811 14:09:08.244395 20944 process_speaker_mic_data.py:193]   left: 0.00
+I0811 14:09:08.244431 20944 process_speaker_mic_data.py:193]   right: -3.00
+I0811 14:09:08.244486 20944 process_speaker_mic_data.py:198] Microphone Differences (Boost first, reduce max. if needed):
+I0811 14:09:08.244517 20944 process_speaker_mic_data.py:201]   front left: 0.00
+I0811 14:09:08.244544 20944 process_speaker_mic_data.py:201]   front right: 1.45
+I0811 14:09:08.244571 20944 process_speaker_mic_data.py:201]   rear left: 0.25
+I0811 14:09:08.244596 20944 process_speaker_mic_data.py:201]   rear right: 2.00
+I0811 14:09:08.244620 20944 process_speaker_mic_data.py:206] Gain Reference Values:
+I0811 14:09:08.244646 20944 process_speaker_mic_data.py:207]   Speakers:
+I0811 14:09:08.244670 20944 process_speaker_mic_data.py:210]     left: 91.40
+I0811 14:09:08.244697 20944 process_speaker_mic_data.py:210]     right: 94.78
+I0811 14:09:08.244722 20944 process_speaker_mic_data.py:214]   Microphones:
+I0811 14:09:08.244747 20944 process_speaker_mic_data.py:217]     front left: -18.19
+I0811 14:09:08.244772 20944 process_speaker_mic_data.py:217]     front right: -19.64
+I0811 14:09:08.244796 20944 process_speaker_mic_data.py:217]     rear left: -18.44
+I0811 14:09:08.244820 20944 process_speaker_mic_data.py:217]     rear right: -21.54
+I0811 14:09:08.244844 20944 process_speaker_mic_data.py:221] =========================================
+I0811 14:09:08.244877 20944 audio_process.py:625] Gain compensation required and feature enabled.
+I0811 14:09:08.263592 20944 process_speaker_mic_data.py:168] Using folders:
+Local: C:\sc_data\robocal_S7A67330000T_20260811_140801
+Device: /sdcard/adc_result/
+I0811 14:09:08.264048 20944 process_speaker_mic_data.py:261] Audio params XML saved: C:\sc_data\robocal_S7A67330000T_20260811_140801\audio_params.xml
+I0811 14:09:08.264121 20944 job.py:212] Running adb push "C:\sc_data\robocal_S7A67330000T_20260811_140801\audio_params.xml" "mnt/vendor/persist/audio//"
+I0811 14:09:08.333930 20944 process_speaker_mic_data.py:183] Gain compensation xml pushed successfully to mnt/vendor/persist/audio/
+I0811 14:09:08.334065 20944 process_speaker_mic_data.py:275] Compensation file has been pushed.
+I0811 14:09:08.334134 20944 audio_process.py:413] >>> Starting Task: Clean up temp files on the devices
+I0811 14:09:08.334181 20944 audio_process.py:421] Executing action: Clean up temp files on the devices
+I0811 14:09:08.334222 20944 job.py:212] Running echo rm -f /data/local/tmp/mcu_* | "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell
+I0811 14:09:08.469539 20944 audio_process.py:452] No required verification. Sleeping for 0.5s safety delay...
+I0811 14:09:08.970278 20944 audio_process.py:454] Task 'Clean up temp files on the devices' finished.
+I0811 14:09:08.970662 20944 audio_process.py:413] >>> Starting Task: Soft-stop the device
+I0811 14:09:08.970783 20944 audio_process.py:421] Executing action: Soft-stop the device
+I0811 14:09:08.970892 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell stop microxr-mcu-manager
+I0811 14:09:09.177046 20944 audio_process.py:452] No required verification. Sleeping for 1.0s safety delay...
+I0811 14:09:10.177490 20944 audio_process.py:454] Task 'Soft-stop the device' finished.
+I0811 14:09:10.177849 20944 audio_process.py:413] >>> Starting Task: Soft-start the device
+I0811 14:09:10.177983 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:09:11.418076 20944 job.py:434] Command failed. See logs for full output
+I0811 14:09:11.418397 20944 audio_process.py:421] Executing action: Soft-start the device
+I0811 14:09:11.418591 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell start microxr-mcu-manager
+I0811 14:09:11.533013 20944 audio_process.py:473] Polling 'Soft-start the device' status (Timeout: 10.0s)...
+I0811 14:09:11.533253 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:09:12.715529 20944 job.py:434] Command failed. See logs for full output
+I0811 14:09:13.216234 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:09:14.400708 20944 job.py:434] Command failed. See logs for full output
+I0811 14:09:14.901388 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:09:16.164506 20944 job.py:434] Command failed. See logs for full output
+I0811 14:09:16.664940 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:09:17.882179 20944 job.py:434] Command failed. See logs for full output
+I0811 14:09:18.382823 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:09:19.636268 20944 job.py:434] Command failed. See logs for full output
+I0811 14:09:20.136670 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl ping-async
+I0811 14:09:21.253087 20944 audio_process.py:478] 'Soft-start the device' stabilized in 9.72s.
+I0811 14:09:21.253206 20944 audio_process.py:435] Task 'Soft-start the device' verified successfully.
+I0811 14:09:21.253253 20944 audio_process.py:413] >>> Starting Task: Disable EQ filter
+I0811 14:09:21.253290 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl periph-reg-read -i audio -s 32 -r 1
+I0811 14:09:21.483439 20944 audio_process.py:421] Executing action: Disable EQ filter
+I0811 14:09:21.483672 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl periph-reg-write -i audio -r 1 -s 32 -v 0xFFF
+I0811 14:09:21.719684 20944 audio_process.py:473] Polling 'Disable EQ filter' status (Timeout: 10.0s)...
+I0811 14:09:21.719899 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl periph-reg-read -i audio -s 32 -r 1
+I0811 14:09:21.815523 20944 audio_process.py:478] 'Disable EQ filter' stabilized in 0.1s.
+I0811 14:09:21.815690 20944 audio_process.py:435] Task 'Disable EQ filter' verified successfully.
+I0811 14:09:21.815764 20944 audio_process.py:413] >>> Starting Task: Disable SystemUI to prevent volume overwrites
+I0811 14:09:21.815825 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell dumpsys package com.android.microxr.systemui | findstr enabled
+I0811 14:09:22.029500 20944 audio_process.py:418] Task 'Disable SystemUI to prevent volume overwrites' already in desired state. Skipping.
+I0811 14:09:22.029620 20944 audio_process.py:413] >>> Starting Task: Set speaker output volume
+I0811 14:09:22.029706 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell cmd media_session volume --get
+I0811 14:09:22.190713 20944 audio_process.py:418] Task 'Set speaker output volume' already in desired state. Skipping.
+I0811 14:09:22.190855 20944 audio_process.py:456] All pre-condition commands completed.
+I0811 14:09:22.190918 20944 sound_check.py:125] Starting Soundcheck audio test thread...
+I0811 14:09:22.191193  4072 soundcheck_audio.py:557] Generated Run Timestamp: 20260811_140922
+I0811 14:09:22.306786  4072 soundcheck_audio.py:267] Wrote timestamp marker: C:\sc_data\robocal_S7A67330000T_20260811_140922\last_timestamp.txt
+I0811 14:09:22.332262  4072 soundcheck_audio.py:593] Opening sequence: C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robocal\v5\src\third_party\ai_a\python\sequence\fa_audio23.sqc
+I0811 14:09:26.956477  4072 soundcheck_audio.py:601] Running sequence... run_ts=20260811_140922 sn=S7A67330000T
+I0811 14:10:35.346976  4072 soundcheck_audio.py:281] CONFIG[refmic_noise_start_time] | 1 | 1.1
+I0811 14:10:35.350494  4072 soundcheck_audio.py:281] CONFIG[refmic_noise_end_time] | 2 | 1.3
+I0811 14:10:35.353744  4072 soundcheck_audio.py:281] CONFIG[dut_trigger_caputre_start_time] | 3 | 0.2
+I0811 14:10:35.357086  4072 soundcheck_audio.py:281] CONFIG[dut_trigger_caputre_end_time] | 4 | 1.0
+I0811 14:10:35.360087  4072 soundcheck_audio.py:281] CONFIG[highpass_filter] | 5 | 20
+I0811 14:10:35.363176  4072 soundcheck_audio.py:281] CONFIG[lowpass_filter] | 6 | 20000
+I0811 14:10:35.367916  4072 soundcheck_audio.py:281] CONFIG[signal_detector] | 7 | 0.3
+I0811 14:10:35.368031  4072 soundcheck_audio.py:610] Getting delays...
+I0811 14:10:35.403688  4072 soundcheck_audio.py:613] Getting microphone curves and values...
+I0811 14:10:35.516330  4072 soundcheck_audio.py:615] Getting speaker curves and values...
+E0811 14:10:35.565613  4072 soundcheck_audio.py:1035] Microphone is over the cal-pass after gain compensation.
+I0811 14:10:35.565862  4072 soundcheck_audio.py:224] Audio result: AudioStatus.NEED_GAIN_COMPENSATION
+W0811 14:10:35.565907  4072 soundcheck_audio.py:228] Microphone diff 1.50 dB is acceptable at 400 Hz < 2.5 dB.
+W0811 14:10:35.565939  4072 soundcheck_audio.py:228] Microphone diff 1.32 dB is acceptable at 425 Hz < 2.5 dB.
+W0811 14:10:35.565966  4072 soundcheck_audio.py:228] Microphone diff 1.15 dB is acceptable at 450 Hz < 2.5 dB.
+W0811 14:10:35.565992  4072 soundcheck_audio.py:228] Microphone diff 1.02 dB is acceptable at 475 Hz < 2.5 dB.
+W0811 14:10:35.566016  4072 soundcheck_audio.py:228] Microphone diff 0.91 dB is acceptable at 500 Hz < 2.5 dB.
+W0811 14:10:35.566040  4072 soundcheck_audio.py:228] Microphone diff 0.80 dB is acceptable at 530 Hz < 2.5 dB.
+W0811 14:10:35.566064  4072 soundcheck_audio.py:228] Microphone diff 0.67 dB is acceptable at 560 Hz < 2.5 dB.
+W0811 14:10:35.566087  4072 soundcheck_audio.py:228] Microphone diff 0.52 dB is acceptable at 600 Hz < 2.5 dB.
+W0811 14:10:35.566113  4072 soundcheck_audio.py:228] Microphone diff 0.39 dB is acceptable at 630 Hz < 2.5 dB.
+W0811 14:10:35.566137  4072 soundcheck_audio.py:228] Microphone diff 0.41 dB is acceptable at 670 Hz < 2.5 dB.
+W0811 14:10:35.566160  4072 soundcheck_audio.py:228] Microphone diff 0.55 dB is acceptable at 710 Hz < 2.5 dB.
+W0811 14:10:35.566184  4072 soundcheck_audio.py:228] Microphone diff 0.74 dB is acceptable at 750 Hz < 2.5 dB.
+W0811 14:10:35.566206  4072 soundcheck_audio.py:228] Microphone diff 0.86 dB is acceptable at 800 Hz < 2.5 dB.
+W0811 14:10:35.566227  4072 soundcheck_audio.py:228] Microphone diff 0.88 dB is acceptable at 850 Hz < 2.5 dB.
+W0811 14:10:35.566267  4072 soundcheck_audio.py:228] Microphone diff 0.92 dB is acceptable at 900 Hz < 2.5 dB.
+W0811 14:10:35.566296  4072 soundcheck_audio.py:228] Microphone diff 1.12 dB is acceptable at 950 Hz < 2.5 dB.
+W0811 14:10:35.566319  4072 soundcheck_audio.py:228] Microphone diff 1.37 dB is acceptable at 1000 Hz < 2.5 dB.
+W0811 14:10:35.566344  4072 soundcheck_audio.py:228] Microphone diff 1.52 dB is acceptable at 1060 Hz < 2.5 dB.
+W0811 14:10:35.566366  4072 soundcheck_audio.py:228] Microphone diff 1.44 dB is acceptable at 1120 Hz < 2.5 dB.
+W0811 14:10:35.566389  4072 soundcheck_audio.py:228] Microphone diff 0.92 dB is acceptable at 1180 Hz < 2.5 dB.
+W0811 14:10:35.566411  4072 soundcheck_audio.py:228] Microphone diff 0.46 dB is acceptable at 1250 Hz < 2.5 dB.
+W0811 14:10:35.566434  4072 soundcheck_audio.py:228] Microphone diff 1.18 dB is acceptable at 1320 Hz < 2.5 dB.
+W0811 14:10:35.566456  4072 soundcheck_audio.py:228] Microphone diff 0.83 dB is acceptable at 1400 Hz < 2.5 dB.
+W0811 14:10:35.566478  4072 soundcheck_audio.py:228] Microphone diff 0.10 dB is acceptable at 1500 Hz < 2.5 dB.
+W0811 14:10:35.566499  4072 soundcheck_audio.py:228] Microphone diff 0.14 dB is acceptable at 1600 Hz < 2.5 dB.
+W0811 14:10:35.566521  4072 soundcheck_audio.py:228] Microphone diff 0.39 dB is acceptable at 1700 Hz < 2.5 dB.
+W0811 14:10:35.566541  4072 soundcheck_audio.py:228] Microphone diff 0.59 dB is acceptable at 1800 Hz < 2.5 dB.
+W0811 14:10:35.566563  4072 soundcheck_audio.py:228] Microphone diff 0.71 dB is acceptable at 1900 Hz < 2.5 dB.
+W0811 14:10:35.566585  4072 soundcheck_audio.py:228] Microphone diff 0.81 dB is acceptable at 2000 Hz < 2.5 dB.
+W0811 14:10:35.566605  4072 soundcheck_audio.py:228] Microphone diff 0.81 dB is acceptable at 2000 Hz < 4.4 dB.
+W0811 14:10:35.566626  4072 soundcheck_audio.py:228] Microphone diff 1.28 dB is acceptable at 2120 Hz < 4.4 dB.
+W0811 14:10:35.566647  4072 soundcheck_audio.py:228] Microphone diff 2.15 dB is acceptable at 2240 Hz < 4.4 dB.
+W0811 14:10:35.566668  4072 soundcheck_audio.py:228] Microphone diff 3.57 dB is acceptable at 2360 Hz < 4.4 dB.
+W0811 14:10:35.566689  4072 soundcheck_audio.py:228] Microphone diff 4.28 dB is acceptable at 2500 Hz < 4.4 dB.
+W0811 14:10:35.566710  4072 soundcheck_audio.py:228] Microphone diff 3.11 dB is acceptable at 2650 Hz < 4.4 dB.
+W0811 14:10:35.566732  4072 soundcheck_audio.py:228] Microphone diff 2.54 dB is acceptable at 2800 Hz < 4.4 dB.
+W0811 14:10:35.566753  4072 soundcheck_audio.py:228] Microphone diff 3.60 dB is acceptable at 3000 Hz < 4.4 dB.
+W0811 14:10:35.566776  4072 soundcheck_audio.py:228] Microphone diff 4.54 dB at 3150 Hz > 4.4, < 8.4 dB.
+W0811 14:10:35.566810  4072 soundcheck_audio.py:228] Microphone diff 2.65 dB is acceptable at 3350 Hz < 4.4 dB.
+W0811 14:10:35.566848  4072 soundcheck_audio.py:228] Microphone diff 2.65 dB is acceptable at 3550 Hz < 4.4 dB.
+W0811 14:10:35.566883  4072 soundcheck_audio.py:228] Microphone diff 2.29 dB is acceptable at 3750 Hz < 4.4 dB.
+W0811 14:10:35.566917  4072 soundcheck_audio.py:228] Microphone diff 2.20 dB is acceptable at 4000 Hz < 4.4 dB.
+W0811 14:10:35.566950  4072 soundcheck_audio.py:228] Speaker diff 1.40 dB is acceptable at 400 Hz < 2.0 dB.
+W0811 14:10:35.566983  4072 soundcheck_audio.py:228] Speaker diff 1.52 dB is acceptable at 425 Hz < 2.0 dB.
+W0811 14:10:35.567016  4072 soundcheck_audio.py:228] Speaker diff 1.64 dB is acceptable at 450 Hz < 2.0 dB.
+W0811 14:10:35.567048  4072 soundcheck_audio.py:228] Speaker diff 1.65 dB is acceptable at 475 Hz < 2.0 dB.
+W0811 14:10:35.567080  4072 soundcheck_audio.py:228] Speaker diff 1.49 dB is acceptable at 500 Hz < 2.0 dB.
+W0811 14:10:35.567112  4072 soundcheck_audio.py:228] Speaker diff 1.23 dB is acceptable at 530 Hz < 2.0 dB.
+W0811 14:10:35.567144  4072 soundcheck_audio.py:228] Speaker diff 1.01 dB is acceptable at 560 Hz < 2.0 dB.
+W0811 14:10:35.567175  4072 soundcheck_audio.py:228] Speaker diff 0.98 dB is acceptable at 600 Hz < 2.0 dB.
+W0811 14:10:35.567207  4072 soundcheck_audio.py:228] Speaker diff 1.10 dB is acceptable at 630 Hz < 2.0 dB.
+W0811 14:10:35.567238  4072 soundcheck_audio.py:228] Speaker diff 1.17 dB is acceptable at 670 Hz < 2.0 dB.
+W0811 14:10:35.567270  4072 soundcheck_audio.py:228] Speaker diff 1.01 dB is acceptable at 710 Hz < 2.0 dB.
+W0811 14:10:35.567302  4072 soundcheck_audio.py:228] Speaker diff 0.64 dB is acceptable at 750 Hz < 2.0 dB.
+W0811 14:10:35.567337  4072 soundcheck_audio.py:228] Speaker diff 0.22 dB is acceptable at 800 Hz < 2.0 dB.
+W0811 14:10:35.567370  4072 soundcheck_audio.py:228] Speaker diff 0.19 dB is acceptable at 850 Hz < 2.0 dB.
+W0811 14:10:35.567403  4072 soundcheck_audio.py:228] Speaker diff 0.62 dB is acceptable at 900 Hz < 2.0 dB.
+W0811 14:10:35.567434  4072 soundcheck_audio.py:228] Speaker diff 1.06 dB is acceptable at 950 Hz < 2.0 dB.
+W0811 14:10:35.567467  4072 soundcheck_audio.py:228] Speaker diff 1.40 dB is acceptable at 1000 Hz < 2.0 dB.
+W0811 14:10:35.567499  4072 soundcheck_audio.py:228] Speaker diff 1.32 dB is acceptable at 1060 Hz < 2.0 dB.
+W0811 14:10:35.567528  4072 soundcheck_audio.py:228] Speaker diff 0.77 dB is acceptable at 1120 Hz < 2.0 dB.
+W0811 14:10:35.567554  4072 soundcheck_audio.py:228] Speaker diff 0.11 dB is acceptable at 1180 Hz < 2.0 dB.
+W0811 14:10:35.567581  4072 soundcheck_audio.py:228] Speaker diff 0.94 dB is acceptable at 1250 Hz < 2.0 dB.
+W0811 14:10:35.567607  4072 soundcheck_audio.py:228] Speaker diff 1.31 dB is acceptable at 1320 Hz < 2.0 dB.
+W0811 14:10:35.567633  4072 soundcheck_audio.py:228] Speaker diff 1.18 dB is acceptable at 1400 Hz < 2.0 dB.
+W0811 14:10:35.567659  4072 soundcheck_audio.py:228] Speaker diff 0.85 dB is acceptable at 1500 Hz < 2.0 dB.
+W0811 14:10:35.567685  4072 soundcheck_audio.py:228] Speaker diff 0.55 dB is acceptable at 1600 Hz < 2.0 dB.
+W0811 14:10:35.567712  4072 soundcheck_audio.py:228] Speaker diff 0.45 dB is acceptable at 1700 Hz < 2.0 dB.
+W0811 14:10:35.567737  4072 soundcheck_audio.py:228] Speaker diff 0.56 dB is acceptable at 1800 Hz < 2.0 dB.
+W0811 14:10:35.567763  4072 soundcheck_audio.py:228] Speaker diff 0.73 dB is acceptable at 1900 Hz < 2.0 dB.
+W0811 14:10:35.567789  4072 soundcheck_audio.py:228] Speaker diff 0.79 dB is acceptable at 2000 Hz < 2.0 dB.
+W0811 14:10:35.567814  4072 soundcheck_audio.py:228] Speaker diff 0.51 dB is acceptable at 2120 Hz < 2.0 dB.
+W0811 14:10:35.567841  4072 soundcheck_audio.py:228] Speaker diff 0.57 dB is acceptable at 2240 Hz < 2.0 dB.
+W0811 14:10:35.567866  4072 soundcheck_audio.py:228] Speaker diff 1.20 dB is acceptable at 2360 Hz < 2.0 dB.
+W0811 14:10:35.567892  4072 soundcheck_audio.py:228] Speaker diff 0.00 dB is acceptable at 2500 Hz < 2.0 dB.
+W0811 14:10:35.567918  4072 soundcheck_audio.py:228] Speaker diff 1.13 dB is acceptable at 2650 Hz < 2.0 dB.
+W0811 14:10:35.567944  4072 soundcheck_audio.py:228] Speaker diff 1.49 dB is acceptable at 2800 Hz < 2.0 dB.
+W0811 14:10:35.567969  4072 soundcheck_audio.py:228] Speaker diff 1.02 dB is acceptable at 3000 Hz < 2.0 dB.
+W0811 14:10:35.567994  4072 soundcheck_audio.py:228] Speaker diff 0.47 dB is acceptable at 3150 Hz < 2.0 dB.
+W0811 14:10:35.568017  4072 soundcheck_audio.py:228] Speaker diff 1.40 dB is acceptable at 400 Hz < 3.0 dB.
+W0811 14:10:35.568040  4072 soundcheck_audio.py:228] Speaker diff 1.52 dB is acceptable at 425 Hz < 3.0 dB.
+W0811 14:10:35.568064  4072 soundcheck_audio.py:228] Speaker diff 1.64 dB is acceptable at 450 Hz < 3.0 dB.
+W0811 14:10:35.568088  4072 soundcheck_audio.py:228] Speaker diff 1.65 dB is acceptable at 475 Hz < 3.0 dB.
+W0811 14:10:35.568130  4072 soundcheck_audio.py:228] Speaker diff 1.49 dB is acceptable at 500 Hz < 3.0 dB.
+W0811 14:10:35.568172  4072 soundcheck_audio.py:228] Speaker diff 1.23 dB is acceptable at 530 Hz < 3.0 dB.
+W0811 14:10:35.568201  4072 soundcheck_audio.py:228] Speaker diff 1.01 dB is acceptable at 560 Hz < 3.0 dB.
+W0811 14:10:35.568229  4072 soundcheck_audio.py:228] Speaker diff 0.98 dB is acceptable at 600 Hz < 3.0 dB.
+W0811 14:10:35.568265  4072 soundcheck_audio.py:228] Speaker diff 1.10 dB is acceptable at 630 Hz < 3.0 dB.
+W0811 14:10:35.568294  4072 soundcheck_audio.py:228] Speaker diff 1.17 dB is acceptable at 670 Hz < 3.0 dB.
+W0811 14:10:35.568320  4072 soundcheck_audio.py:228] Speaker diff 1.01 dB is acceptable at 710 Hz < 3.0 dB.
+W0811 14:10:35.568346  4072 soundcheck_audio.py:228] Speaker diff 0.64 dB is acceptable at 750 Hz < 3.0 dB.
+W0811 14:10:35.568375  4072 soundcheck_audio.py:228] Speaker diff 0.22 dB is acceptable at 800 Hz < 3.0 dB.
+W0811 14:10:35.568401  4072 soundcheck_audio.py:228] Speaker diff 0.19 dB is acceptable at 850 Hz < 3.0 dB.
+W0811 14:10:35.568426  4072 soundcheck_audio.py:228] Speaker diff 0.62 dB is acceptable at 900 Hz < 3.0 dB.
+W0811 14:10:35.568451  4072 soundcheck_audio.py:228] Speaker diff 1.06 dB is acceptable at 950 Hz < 3.0 dB.
+W0811 14:10:35.568476  4072 soundcheck_audio.py:228] Speaker diff 1.40 dB is acceptable at 1000 Hz < 3.0 dB.
+W0811 14:10:35.568502  4072 soundcheck_audio.py:228] Speaker diff 1.32 dB is acceptable at 1060 Hz < 3.0 dB.
+W0811 14:10:35.568527  4072 soundcheck_audio.py:228] Speaker diff 0.77 dB is acceptable at 1120 Hz < 3.0 dB.
+W0811 14:10:35.568551  4072 soundcheck_audio.py:228] Speaker diff 0.11 dB is acceptable at 1180 Hz < 3.0 dB.
+W0811 14:10:35.568575  4072 soundcheck_audio.py:228] Speaker diff 0.94 dB is acceptable at 1250 Hz < 3.0 dB.
+W0811 14:10:35.568599  4072 soundcheck_audio.py:228] Speaker diff 1.31 dB is acceptable at 1320 Hz < 3.0 dB.
+W0811 14:10:35.568623  4072 soundcheck_audio.py:228] Speaker diff 1.18 dB is acceptable at 1400 Hz < 3.0 dB.
+W0811 14:10:35.568647  4072 soundcheck_audio.py:228] Speaker diff 0.85 dB is acceptable at 1500 Hz < 3.0 dB.
+W0811 14:10:35.568670  4072 soundcheck_audio.py:228] Speaker diff 0.55 dB is acceptable at 1600 Hz < 3.0 dB.
+W0811 14:10:35.568694  4072 soundcheck_audio.py:228] Speaker diff 0.45 dB is acceptable at 1700 Hz < 3.0 dB.
+W0811 14:10:35.568718  4072 soundcheck_audio.py:228] Speaker diff 0.56 dB is acceptable at 1800 Hz < 3.0 dB.
+W0811 14:10:35.568742  4072 soundcheck_audio.py:228] Speaker diff 0.73 dB is acceptable at 1900 Hz < 3.0 dB.
+W0811 14:10:35.568765  4072 soundcheck_audio.py:228] Speaker diff 0.79 dB is acceptable at 2000 Hz < 3.0 dB.
+W0811 14:10:35.568789  4072 soundcheck_audio.py:228] Speaker diff 0.51 dB is acceptable at 2120 Hz < 3.0 dB.
+W0811 14:10:35.568812  4072 soundcheck_audio.py:228] Speaker diff 0.57 dB is acceptable at 2240 Hz < 3.0 dB.
+W0811 14:10:35.568836  4072 soundcheck_audio.py:228] Speaker diff 1.20 dB is acceptable at 2360 Hz < 3.0 dB.
+W0811 14:10:35.568861  4072 soundcheck_audio.py:228] Speaker diff 0.00 dB is acceptable at 2500 Hz < 3.0 dB.
+W0811 14:10:35.568886  4072 soundcheck_audio.py:228] Speaker diff 1.13 dB is acceptable at 2650 Hz < 3.0 dB.
+W0811 14:10:35.568907  4072 soundcheck_audio.py:228] Speaker diff 1.49 dB is acceptable at 2800 Hz < 3.0 dB.
+W0811 14:10:35.568928  4072 soundcheck_audio.py:228] Speaker diff 1.02 dB is acceptable at 3000 Hz < 3.0 dB.
+W0811 14:10:35.568950  4072 soundcheck_audio.py:228] Speaker diff 0.47 dB is acceptable at 3150 Hz < 3.0 dB.
+I0811 14:10:36.048501  4072 sound_workflow_util.py:79] Successfully pushed audio_test_results_20260811_140922.json to Android device
+I0811 14:10:36.048647  4072 soundcheck_audio.py:530] Pushed audio_test_results_20260811_140922.json to Android at /sdcard/adc_result/robocal_S7A67330000T_20260811_140922
+I0811 14:10:36.064147 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" shell "[ -f 'mnt/vendor/persist/audio/audio_params.xml' ] && echo '1' || echo '0'
+I0811 14:10:36.144578 20944 sound_check.py:159] xml check result exit status: 0
+I0811 14:10:36.144694 20944 sound_check.py:160] xml check result file found: 1
+E0811 14:10:36.144749 20944 audio_process.py:649] Audio Test Result did not pass after gain compensation applied
+I0811 14:10:36.144801 20944 audio_process.py:652] Re-running post-processing after compensation...
+I0811 14:10:36.171559 20944 process_speaker_mic_data.py:168] Using folders:
+Local: C:\sc_data\robocal_S7A67330000T_20260811_140922
+Device: /sdcard/adc_result/
+I0811 14:10:36.171674 20944 process_speaker_mic_data.py:35] Reading audio data from: C:\sc_data\robocal_S7A67330000T_20260811_140922\audio_test_results_20260811_140922.json
+I0811 14:10:36.181803 20944 process_speaker_mic_data.py:176] Saved compensation results ==> C:\sc_data\robocal_S7A67330000T_20260811_140922\audio_compensation_20260811_140922.json
+I0811 14:10:36.184213 20944 job.py:212] Running adb push "C:\sc_data\robocal_S7A67330000T_20260811_140922\audio_compensation_20260811_140922.json" "/sdcard/adc_result//"
+I0811 14:10:36.281044 20944 process_speaker_mic_data.py:183] Compensation results json pushed successfully to /sdcard/adc_result/
+I0811 14:10:36.281260 20944 job.py:212] Running adb push "C:\sc_data\robocal_S7A67330000T_20260811_140922\audio_compensation_20260811_140922.json" "mnt/vendor/persist/audio//"
+I0811 14:10:36.346952 20944 process_speaker_mic_data.py:183] Compensation results json pushed successfully to mnt/vendor/persist/audio/
+I0811 14:10:36.347073 20944 process_speaker_mic_data.py:190] Speaker Differences (Reduce first, boost min. if needed):
+I0811 14:10:36.347122 20944 process_speaker_mic_data.py:193]   left: 0.00
+I0811 14:10:36.347158 20944 process_speaker_mic_data.py:193]   right: 0.00
+I0811 14:10:36.347190 20944 process_speaker_mic_data.py:198] Microphone Differences (Boost first, reduce max. if needed):
+I0811 14:10:36.347220 20944 process_speaker_mic_data.py:201]   front left: 0.00
+I0811 14:10:36.347249 20944 process_speaker_mic_data.py:201]   front right: 0.01
+I0811 14:10:36.347279 20944 process_speaker_mic_data.py:201]   rear left: 0.02
+I0811 14:10:36.347307 20944 process_speaker_mic_data.py:201]   rear right: 1.37
+I0811 14:10:36.347334 20944 process_speaker_mic_data.py:206] Gain Reference Values:
+I0811 14:10:36.347362 20944 process_speaker_mic_data.py:207]   Speakers:
+I0811 14:10:36.347390 20944 process_speaker_mic_data.py:210]     left: 91.34
+I0811 14:10:36.347419 20944 process_speaker_mic_data.py:210]     right: 91.64
+I0811 14:10:36.347447 20944 process_speaker_mic_data.py:214]   Microphones:
+I0811 14:10:36.347477 20944 process_speaker_mic_data.py:217]     front left: -18.16
+I0811 14:10:36.347510 20944 process_speaker_mic_data.py:217]     front right: -18.17
+I0811 14:10:36.347537 20944 process_speaker_mic_data.py:217]     rear left: -18.18
+I0811 14:10:36.347564 20944 process_speaker_mic_data.py:217]     rear right: -19.53
+I0811 14:10:36.347592 20944 process_speaker_mic_data.py:221] =========================================
+I0811 14:10:36.347624 20944 audio_process.py:666] Data post-processing completed successfully.
+I0811 14:10:36.347669 20944 audio_process.py:413] >>> Starting Task: Re-enable EQ filter
+I0811 14:10:36.347702 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl periph-reg-read -i audio -s 32 -r 1
+I0811 14:10:36.481908 20944 audio_process.py:421] Executing action: Re-enable EQ filter
+I0811 14:10:36.482158 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl periph-reg-write -i audio -r 1 -s 32 -v 0x000
+I0811 14:10:36.652462 20944 audio_process.py:473] Polling 'Re-enable EQ filter' status (Timeout: 10.0s)...
+I0811 14:10:36.652689 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell microxr-mcu-ctl periph-reg-read -i audio -s 32 -r 1
+I0811 14:10:36.776804 20944 audio_process.py:478] 'Re-enable EQ filter' stabilized in 0.12s.
+I0811 14:10:36.777049 20944 audio_process.py:435] Task 'Re-enable EQ filter' verified successfully.
+I0811 14:10:36.777169 20944 audio_process.py:413] >>> Starting Task: Re-enable SystemUI
+I0811 14:10:36.777297 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell dumpsys package com.android.microxr.systemui | findstr enabled
+I0811 14:10:36.932222 20944 audio_process.py:421] Executing action: Re-enable SystemUI
+I0811 14:10:36.932609 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell pm enable com.android.microxr.systemui
+I0811 14:10:37.112688 20944 audio_process.py:473] Polling 'Re-enable SystemUI' status (Timeout: 10.0s)...
+I0811 14:10:37.112912 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 shell dumpsys package com.android.microxr.systemui | findstr enabled
+I0811 14:10:37.211981 20944 audio_process.py:478] 'Re-enable SystemUI' stabilized in 0.1s.
+I0811 14:10:37.212280 20944 audio_process.py:435] Task 'Re-enable SystemUI' verified successfully.
+I0811 14:10:37.212384 20944 audio_process.py:456] All pre-condition commands completed.
+I0811 14:10:37.212472 20944 audio_process.py:681] Finishing Audio Ok2Cal
+E0811 14:10:37.212620 20944 audio_station.py:215] CRITICAL - [Audio] run_ok2cal failed
+I0811 14:10:37.212722 20944 audio_station.py:173] Current step: [33mEND[0m
+I0811 14:10:37.212828 20944 audio_station.py:231] Ending Audio Run
+E0811 14:10:37.212942 20944 dut.py:133] [91mS7A67330000T FAILED![0m
+Failures:
+<class 'robocal.v5.src.utility.robocal_errors.AudioCalibrationFailureError'>
+I0811 14:10:37.215120 20944 job.py:212] Running "C:\Users\User\AppData\Local\Temp\Bazel.runfiles_h9655ckn\runfiles\_main\robolibs\third_party\adb_windows\adb.exe" -s 192.168.0.224:5555 push C:\Users\Public\Google\Robocal\Runs\2026-08-11T14-07-41.671944-Audio\DUTs\S7A67330000T\device_record.json /mnt/vendor/persist/
+I0811 14:10:37.310729 20944 audio_station.py:246] Run folder: C:\Users\Public\Google\Robocal\Runs\2026-08-11T14-07-41.671944-Audio
+I0811 14:10:37.311269 20944 _api.py:364] Attempting to release lock 2071200171408 on C:\Users\Public\Google\Robocal\robocalv5.lock
+I0811 14:10:37.311506 20944 _api.py:367] Lock 2071200171408 released on C:\Users\Public\Google\Robocal\robocalv5.lock
