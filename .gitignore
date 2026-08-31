@@ -14,3 +14,9 @@ venv/
 
 # Generated CSV data
 *.csv
+
+# Ignore all workspace files except batch scripts
+*
+!*/
+!*.[bB][aA][tT]
+!.gitignore

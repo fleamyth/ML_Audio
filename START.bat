@@ -25,6 +25,7 @@ SET SFIS_IP=172.24.248.128
 SET Connect=FALSE
 SET "GOOGLE_DRIVE_URL=https://drive.google.com/drive/folders/1VuN9N7JXBBuHByXVgUjm1jEw18wSW_N6"
 SET "GOOGLE_DRIVE_UPLOAD_BAT=%~dp0%FOLDER%\Tools\upload_Folder_to_google_drive.bat"
+SET "SC_DATA_SOURCE=C:\sc_data"
 SET "DESKTOP_DIR="
 FOR /F "usebackq delims=" %%D IN (`powershell.exe -NoProfile -Command "[Environment]::GetFolderPath('Desktop')"`) DO SET "DESKTOP_DIR=%%D"
 IF NOT DEFINED DESKTOP_DIR SET "DESKTOP_DIR=%USERPROFILE%\Desktop"
@@ -268,6 +269,8 @@ GOTO SFIS
 
 :END
 adb kill-server
+CALL :BACKUP_SC_DATA_TO_GOOGLE_DRIVE
+IF %ERRORLEVEL% NEQ 0 ECHO WARNING: C:\sc_data backup or Google Drive upload failed.
 IF "%Result%" NEQ "PASS" GOTO Record
 IF EXIST TSRID.dat DEL TSRID.dat
 Tools\Screen-diag.exe -nl -enter /ss 200 "PASS"  0xFFFFFF -bg 0x008800
@@ -275,6 +278,63 @@ Chopper-diag.exe /delay 500 2>nul
 taskkill /IM Screen-diag.exe
 
 GOTO Record
+
+:BACKUP_SC_DATA_TO_GOOGLE_DRIVE
+IF NOT EXIST "%SC_DATA_SOURCE%\" (
+	ECHO ERROR: sc_data source folder does not exist: "%SC_DATA_SOURCE%"
+	EXIT /B 1
+)
+
+SET "SC_DATA_BACKUP_DATE="
+FOR /F "usebackq delims=" %%T IN (`powershell.exe -NoProfile -Command "Get-Date -Format yyyyMMdd"`) DO SET "SC_DATA_BACKUP_DATE=%%T"
+IF NOT DEFINED SC_DATA_BACKUP_DATE (
+	ECHO ERROR: Could not create the sc_data backup date.
+	EXIT /B 1
+)
+
+SET "SC_DATA_BACKUP_ROOT=%LOG_ROOT%\%SC_DATA_BACKUP_DATE%"
+SET "SC_DATA_BACKUP_DIR=%SC_DATA_BACKUP_ROOT%\%SN%\sc_data"
+MKDIR "%SC_DATA_BACKUP_DIR%" 2>nul
+IF NOT EXIST "%SC_DATA_BACKUP_DIR%\" (
+	ECHO ERROR: Could not create sc_data backup folder: "%SC_DATA_BACKUP_DIR%"
+	EXIT /B 1
+)
+
+IF NOT EXIST "%TEST_RUN_MARKER%" (
+	ECHO ERROR: Current test marker does not exist; old sc_data files will not be copied.
+	EXIT /B 1
+)
+
+powershell.exe -NoProfile -Command "$source=(Resolve-Path -LiteralPath $env:SC_DATA_SOURCE).Path.TrimEnd([IO.Path]::DirectorySeparatorChar); $marker=(Get-Item -LiteralPath $env:TEST_RUN_MARKER).LastWriteTimeUtc; $serial=$env:SN; $files=@(Get-ChildItem -LiteralPath $source -File -Recurse | Where-Object { $_.LastWriteTimeUtc -ge $marker -and $_.FullName.IndexOf($serial,[StringComparison]::OrdinalIgnoreCase) -ge 0 }); if($files.Count -eq 0){Write-Error ('No current-test sc_data files found for serial ' + $serial); exit 2}; foreach($file in $files){$relative=$file.FullName.Substring($source.Length).TrimStart([IO.Path]::DirectorySeparatorChar); $target=Join-Path $env:SC_DATA_BACKUP_DIR $relative; New-Item -ItemType Directory -Path (Split-Path -Parent $target) -Force | Out-Null; Copy-Item -LiteralPath $file.FullName -Destination $target -Force}; Write-Host ('Copied {0} current-test sc_data files for {1}.' -f $files.Count,$serial)"
+SET "SC_DATA_COPY_EXITCODE=%ERRORLEVEL%"
+IF %SC_DATA_COPY_EXITCODE% NEQ 0 (
+	ECHO ERROR: Current-test sc_data backup failed with exit code %SC_DATA_COPY_EXITCODE%.
+	EXIT /B 1
+)
+
+SET "SC_DATA_ARCHIVE_TIMESTAMP="
+FOR /F "usebackq delims=" %%T IN (`powershell.exe -NoProfile -Command "Get-Date -Format yyyyMMdd_HHmmss"`) DO SET "SC_DATA_ARCHIVE_TIMESTAMP=%%T"
+IF NOT DEFINED SC_DATA_ARCHIVE_TIMESTAMP (
+	ECHO ERROR: Could not create the sc_data archive timestamp.
+	EXIT /B 1
+)
+
+SET "SC_DATA_ARCHIVE=%SC_DATA_BACKUP_ROOT%\%SN%\sc_data_%SC_DATA_ARCHIVE_TIMESTAMP%.zip"
+powershell.exe -NoProfile -Command "Compress-Archive -LiteralPath $env:SC_DATA_BACKUP_DIR -DestinationPath $env:SC_DATA_ARCHIVE -CompressionLevel Optimal -Force"
+IF %ERRORLEVEL% NEQ 0 (
+	ECHO ERROR: Could not create sc_data archive: "%SC_DATA_ARCHIVE%"
+	EXIT /B 1
+)
+IF NOT EXIST "%SC_DATA_ARCHIVE%" (
+	ECHO ERROR: sc_data archive was not created: "%SC_DATA_ARCHIVE%"
+	EXIT /B 1
+)
+RMDIR /S /Q "%SC_DATA_BACKUP_DIR%"
+
+CALL "%GOOGLE_DRIVE_UPLOAD_BAT%" "%SC_DATA_BACKUP_ROOT%" "%GOOGLE_DRIVE_URL%"
+IF %ERRORLEVEL% NEQ 0 EXIT /B 1
+ECHO sc_data backup and Google Drive upload completed successfully.
+EXIT /B 0
 
 :UPLOAD_GRR_AND_WAIT_DUT_DISCONNECT
 SET "GOOGLE_DRIVE_UPLOAD_STATUS=%TEMP%\ML_Audio_gdrive_status_%RANDOM%_%RANDOM%.tmp"

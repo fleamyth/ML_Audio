@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set "TargetDir=C:\Users\User\Robocal-v5_Audio"
+set "TargetDir=C:\Users\User\Barney_exp"
 set /a retryTimes=0
 
 cd /d "%TargetDir%" || exit /b 255

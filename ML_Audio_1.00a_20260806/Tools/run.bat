@@ -1,0 +1,13 @@
+timeout 3
+call audio_e2e.bat
+timeout 3
+call audio_e2e.bat
+timeout 3
+call audio_e2e.bat
+timeout 3
+call audio_e2e.bat
+timeout 3
+call audio_e2e.bat
+timeout 3
+call audio_e2e.bat
+timeout 3
