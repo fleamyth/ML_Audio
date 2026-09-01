@@ -172,20 +172,29 @@ if %wifiResult% neq 0 goto wifi_connect_to_Dut
 Screen-diag.exe -nl -enter /SS 55 "<br>Please remove cable and put the device to the fixture.<br> <br>Press [Enter] to start the test." 0xFFFFFF -bg 0x224466
 
 Chopper-diag.exe -NoHotKey -LD TcsTestSuiteDuration %PROJECT% -c -si -CGV -opf op.dat -SNF SN.dat -sip -TSRID -lock -RL -f %CFG_NAME% -as -ae -SNP "^[0-9,A-Z]{%SN_LEN%}$" -tidf tid.dat -lf ..\DiagPGM\tidlog.xml /r
-IF %ERRORLEVEL% EQU 0 GOTO TestPass
-IF %ERRORLEVEL% EQU 255 GOTO TestFail
-IF %ERRORLEVEL% NEQ 0 pause
-IF %ERRORLEVEL% EQU 250 GOTO InteruptErr
-IF %ERRORLEVEL% EQU 251 GOTO InteruptErr
-IF %ERRORLEVEL% EQU 252 GOTO InteruptErr
-IF %ERRORLEVEL% EQU 253 GOTO InteruptErr
-IF %ERRORLEVEL% EQU 254 GOTO InteruptErr
+SET "TEST_RESULT=%ERRORLEVEL%"
+IF %TEST_RESULT% EQU 205 GOTO AudioRetryExceeded
+IF %TEST_RESULT% EQU 0 GOTO TestPass
+IF %TEST_RESULT% EQU 255 GOTO TestFail
+IF %TEST_RESULT% NEQ 0 pause
+IF %TEST_RESULT% EQU 250 GOTO InteruptErr
+IF %TEST_RESULT% EQU 251 GOTO InteruptErr
+IF %TEST_RESULT% EQU 252 GOTO InteruptErr
+IF %TEST_RESULT% EQU 253 GOTO InteruptErr
+IF %TEST_RESULT% EQU 254 GOTO InteruptErr
+GOTO InteruptErr
+
+:AudioRetryExceeded
+Screen-diag.exe -nl -enter /SS 55 "<br>Audio test exceeded the maximum number of attempts.<br><br>Please remove the test device and restart the test.<br><br>Press [Enter] to continue." 0xFFFFFF -bg 0xBB2222
+GOTO START
 
 :InteruptErr
 ECHO Interupt Error
 GOTO START
 
 :TestFail
+find /i "%PROJECT%,CD" %CSV_NAME%
+IF %ERRORLEVEL% equ 0 goto AudioRetryExceeded
 find /i "%PROJECT%,80" %CSV_NAME%
 IF %ERRORLEVEL% equ 0 goto ShowFail
 find /i "%PROJECT%,8F" %CSV_NAME%
