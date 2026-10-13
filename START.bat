@@ -173,16 +173,15 @@ Screen-diag.exe -nl -enter /SS 55 "<br>Please remove cable and put the device to
 
 Chopper-diag.exe -NoHotKey -LD TcsTestSuiteDuration %PROJECT% -c -si -CGV -opf op.dat -SNF SN.dat -sip -TSRID -lock -RL -f %CFG_NAME% -as -ae -SNP "^[0-9,A-Z]{%SN_LEN%}$" -tidf tid.dat -lf ..\DiagPGM\tidlog.xml /r
 SET "TEST_RESULT=%ERRORLEVEL%"
+ECHO Chopper test exit code: %TEST_RESULT%
 IF %TEST_RESULT% EQU 205 GOTO AudioRetryExceeded
 IF %TEST_RESULT% EQU 0 GOTO TestPass
-IF %TEST_RESULT% EQU 255 GOTO TestFail
-IF %TEST_RESULT% NEQ 0 pause
 IF %TEST_RESULT% EQU 250 GOTO InteruptErr
 IF %TEST_RESULT% EQU 251 GOTO InteruptErr
 IF %TEST_RESULT% EQU 252 GOTO InteruptErr
 IF %TEST_RESULT% EQU 253 GOTO InteruptErr
 IF %TEST_RESULT% EQU 254 GOTO InteruptErr
-GOTO InteruptErr
+GOTO TestFail
 
 :AudioRetryExceeded
 Screen-diag.exe -nl -enter /SS 55 "<br>Audio test exceeded the maximum number of attempts.<br><br>Please remove the test device and restart the test.<br><br>Press [Enter] to continue." 0xFFFFFF -bg 0xBB2222
@@ -230,6 +229,12 @@ Tools\DateChk-auto.exe /FILE %CSV_NAME%
 IF %ERRORLEVEL% NEQ 0 GOTO CHKFAIL
 goto Backup
 
+:CHKFAIL
+echo %date%_%time% ***(%SN%_%TSRID%)-%CSV_NAME% Time Sync Error,*** >> C:\MFGlog\%TYPE%log\event\_DateChkerror.log
+type DateChk.log >> C:\MFGlog\%TYPE%log\event\_DateChkerror.log
+Tools\Screen-diag.exe -nl -enter /SS 40 "Log Time Error!!<br> <br> Log time is out of sync for SN:%SN%<br>This log will not upload or back up.<br> Please check time sync and retest." 0xFFFFFF -bg 0x882222
+GOTO InteruptErr
+
 :Backup
 LogTransfer-auto.exe -nl /de
 call setdate.bat
@@ -265,7 +270,7 @@ Tools\LogTransfer-auto.exe -nl  -tester -F FAIL /L %CSV_NAME%
 SET SFISerror=0
 
 :SFIS
-if "%MODE%" equ DGOTO END
+IF "%MODE%" EQU "D" GOTO END
 python RESTSFIS-diag.py /UP -log %CSV_NAME%
 IF %ERRORLEVEL% NEQ 0 GOTO SFIS_fail
 GOTO END
@@ -444,4 +449,3 @@ IF "%MODE%" EQU "D" GOTO START
 
 :chk2Aroute
 GOTO START
-
