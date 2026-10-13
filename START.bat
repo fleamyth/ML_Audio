@@ -444,9 +444,4 @@ IF "%MODE%" EQU "D" GOTO START
 
 :chk2Aroute
 GOTO START
-IF "%Result%" EQU "PASS" GOTO START
-Start DiagPGM\Screen-diag.exe -enter /SS 55 "Checking SN %SN% SFIS 2A status<br>Please wait... <br> <br>Checking 2A Status from SFIS<br>Please wait a moment..." 0xFFFFFF -bg 0x223366
-python RESTSFIS-diag\RESTSFIS-diag.py /C -sn %SN%
-IF %ERRORLEVEL% EQU 0 DiagPGM\Screen-diag.exe -enter /SS 40 "SN (2A) not allowed!!<br> <br>Please change another tester to do SN (2A) test!!<br><br>Press [ENTER] to continue..." 0xFFFFFF -bg 0x773399
-taskkill /IM Screen-diag.exe
 

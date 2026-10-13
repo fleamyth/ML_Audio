@@ -1,14 +1,16 @@
 @echo off
 setlocal
-adb disconnect
+
 REM Retrieve the hostname
 for /f "tokens=*" %%i in ('hostname') do set HOSTNAME=%%i
 
 REM Remove the "DESKTOP-" prefix
-set WIFI_NAME="ITU8ATO_5G"
+set "WIFI_NAME=%HOSTNAME%"
+if /i "%HOSTNAME:~0,8%"=="DESKTOP-" set "WIFI_NAME=%HOSTNAME:~8%"
+set "WIFI_NAME=%WIFI_NAME%_5G"
 
 REM -- Configuration --
-SET WIFI_SSID=%WIFI_NAME%
+SET "WIFI_SSID=%WIFI_NAME%"
 SET WIFI_PROTOCOL=wpa2
 SET WIFI_PASSWORD=google123
 SET ADB_PORT=5555
@@ -52,28 +54,28 @@ echo.
 
 echo [+] Step 3: Enabling Wi-Fi and connecting to network...
 adb shell "svc wifi enable"
-timeout /t 2 >nul  
+timeout /t 2 >nul
 adb shell cmd wifi start-scan
-timeout /t 3 >nul  
+timeout /t 3 >nul
 
-echo [+] Connecting to SSID: %WIFI_SSID%
-adb shell "cmd wifi connect-network %WIFI_SSID% %WIFI_PROTOCOL% %WIFI_PASSWORD%"
+echo [+] Connecting to SSID: "%WIFI_SSID%"
+adb shell "cmd wifi connect-network \"%WIFI_SSID%\" %WIFI_PROTOCOL% %WIFI_PASSWORD%"
 
 echo [+] Waiting for the device to receive an IP address...
 SET "IP_POLL_ATTEMPTS=0"
 :poll_for_ip
     IF %IP_POLL_ATTEMPTS% GEQ 15 (
         echo [!] ERROR: Timed out waiting for an IP address. Check Wi-Fi credentials and network.
-        goto end
+        goto start
     )
     SET /A IP_POLL_ATTEMPTS+=1
-    
+
     FOR /F "tokens=1,2 delims= " %%G IN ('adb shell "ip addr show wlan0"') DO (
         IF "%%G"=="inet" (
             SET "IP_WITH_MASK=%%H"
         )
     )
-    
+
     IF defined IP_WITH_MASK (
         goto ip_found
     )
@@ -91,7 +93,7 @@ echo.
 
 echo [+] Step 5: Restarting adb in TCP/IP mode...
 adb tcpip %ADB_PORT%
-timeout /t 1 >nul 
+timeout /t 1 >nul
 echo.
 
 echo [+] Step 6: Connecting to device wirelessly...
@@ -123,8 +125,6 @@ if "%STATUS%"=="device" (
     goto start
 )
 echo.
-
 :end
-
 echo ########## Script Finished ##########
 endlocal
